@@ -1,12 +1,50 @@
 body.index {
-  background-color: blueviolet;
+  background-color: #0A0A0A;
+  font-family: Helvetica;
+  font-weight: 300;
+}
+body.index a {
+  text-decoration: none;
+}
+body.index .container {
+  padding: 2%;
+}
+body.index .block {
+  padding-top: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  place-items: center;
+}
+body.index .flex-links {
+  padding-top: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 500px;
 }
 body.index h1 {
-  font-family: Helvetica;
-  padding-top: 20%;
-  padding-left: 25%;
-  font-family: Helvetica;
-  color: black;
-  font-weight: 200;
   font-size: 3rem;
+  color: #DADADA;
+}
+body.index h1 :hover {
+  color: #868686;
+}
+body.index h2 {
+  font-size: 1.5rem;
+  color: #CBFB45;
+}
+body.index .links:hover {
+  color: #1E1E1E;
 }
