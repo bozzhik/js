@@ -1,0 +1,14 @@
+body.index {
+    background-color: blueviolet;
+
+    & h1 {
+        font-family: Helvetica;
+        padding-top: 20%;
+        padding-left: 25%;
+        font-family: Helvetica;
+        color: black;
+        font-weight: 200;
+        font-size: 3rem;
+    }
+
+}
