@@ -3,6 +3,7 @@ body.eye {
   background-color: #0A0A0A;
   font-family: Helvetica;
   font-weight: 200;
+  cursor: none;
 }
 body.eye #cursor {
   position: absolute;
