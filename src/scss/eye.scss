@@ -1,0 +1,30 @@
+$black: #0A0A0A;
+$black2: #1E1E1E;
+$black-hov: #141414;
+$white: #DADADA;
+$white-hov: #868686;
+$grey: #515151;
+$green: #CBFB45;
+
+body.eye {
+    overflow: hidden;
+    background-color: $black;
+    font-family: Helvetica;
+    font-weight: 200;
+
+    #cursor {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%/50%;
+        animation: color_change 1s infinite;
+        }
+
+         @-webkit-keyframes color_change {
+        0% {background-color: red;}
+        25% {background-color: orange;}
+        50% {background-color: yellow;}
+        75% {background-color: blue;}
+        100% {background-color: red;}
+        }
+}
