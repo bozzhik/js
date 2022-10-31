@@ -1,18 +1,14 @@
-let max;
+let message = 'макс';
 
-if (max === undefined) {
-    console.log('я типе нопишу ундифндед');
-}
-else {
-    console.log('я типе не напишу');
-}
-console.log(typeof max);
-max = 'мое имя';
+let message2;
 
-if (max === undefined) {
-    console.log('я типе нопишу ундифндед');
+if (1>1) {
+    message2 = 'божик';
 }
+
 else {
-    console.log('я типе не напишу');
+    message2 = 'боджек';
 }
-console.log(typeof max);
+
+console.log (message);
+console.log (message2);

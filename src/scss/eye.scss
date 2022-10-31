@@ -13,19 +13,10 @@ body.eye {
     font-weight: 200;
     cursor: none;
 
-    #cursor {
-        position: absolute;
-        height: 20px;
-        width: 20px;
-        border-radius: 50%/50%;
-        animation: color_change 1s infinite;
-        }
-
-         @-webkit-keyframes color_change {
-        0% {background-color: red;}
-        25% {background-color: orange;}
-        50% {background-color: yellow;}
-        75% {background-color: blue;}
-        100% {background-color: red;}
-        }
+   & p {
+    font-size: 2rem;
+    padding: 5%;
+    color: $green;
+    font-weight: 300;
+   }
 }
