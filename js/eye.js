@@ -1,8 +1,5 @@
-let num = 100;
-while (num) {
+let num = 0;
+do {
     console.log(num);
-    num--;
-}
-
-// let num = 100;
-// while (num) console.log(num--);
+    num++;
+} while (num< 0);
