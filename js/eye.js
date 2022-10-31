@@ -1,14 +1,4 @@
-let message = 'макс';
-
-let message2;
-
-if (1>1) {
-    message2 = ' божик';
-}
-
-else {
-    message2 = ' боджек';
-}
-
+let message = 'я';
+let message2 = (5 > 1) ? ", макс" : ", максимус";
 message += message2;
-console.log (message);
+console.log(message);
