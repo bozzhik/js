@@ -1,4 +1,2 @@
-let message = 'я';
-let message2 = (5 > 1) ? ", макс" : ", максимус";
-message += message2;
+let message = 5 > 10 ? 'макс' : 'мокс';
 console.log(message);
