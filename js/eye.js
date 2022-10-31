@@ -1,2 +1,8 @@
-let message = 5 > 10 ? 'макс' : 'мокс';
-console.log(message);
+let num = 100;
+while (num) {
+    console.log(num);
+    num--;
+}
+
+// let num = 100;
+// while (num) console.log(num--);
