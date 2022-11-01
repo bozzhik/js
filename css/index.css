@@ -26,7 +26,7 @@ body.index .items .block-shortcut-item:hover {
 
 body.index {
   background-color: #0A0A0A;
-  font-family: Helvetica;
+  font-family: Inter;
   font-weight: 300;
 }
 body.index a {

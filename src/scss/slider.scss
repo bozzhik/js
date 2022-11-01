@@ -1,21 +1,25 @@
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 $black: #0A0A0A;
+$white: #DADADA;
+$grey: #515151;
 
-body.gallery {
+body.slider {
     margin: 0;
     overflow: hidden;
-    background: #515151;
+    background: $black;
     height: 100vh;
-    // font-family: Helvetica;
-    font-family: 'Muli', sans-serif;
+    font-family: Inter;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .text {
+        display: grid;
+    }
     
     * {
         box-sizing: border-box;
       }
-
+    
     .container {
         width: 100%;
         display: flex;
@@ -26,7 +30,7 @@ body.gallery {
             border-radius: 20px;
             margin: 10px;
             cursor: pointer;
-            color: #fff;
+            color: $white;
             flex: 1;
             background-size: cover;
             background-position: center;
@@ -36,7 +40,34 @@ body.gallery {
 
             & h3 {
                 position: absolute;
+                font-family: Inter;
                 font-size: 1.5rem;
+                font-weight: 500;
+                bottom: 20px;
+                left: 20px;
+                margin: 0;
+                opacity: 0;
+
+            }
+        }
+        .slide:nth-of-type(3) {
+            height: 80vh;
+            border-radius: 20px;
+            margin: 10px;
+            cursor: pointer;
+            color: $grey;
+            flex: 1;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            transition: all 500ms ease-in-out;
+
+            & h3 {
+                position: absolute;
+                font-family: Inter;
+                font-size: 1.5rem;
+                font-weight: 500;
                 bottom: 20px;
                 left: 20px;
                 margin: 0;
