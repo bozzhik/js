@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+body.gallery body {
+  font-family: "Muli", sans-serif;
+  overflow: hidden;
+  margin: 0;
+}
+body.gallery * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=gallery.css.map */

@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap'); 
+
+body.gallery {
+    background-color: $black;
+    // font-family: Helvetica;
+    font-family: 'Muli', sans-serif;
+    overflow: hidden;
+    margin: 0;
+    
+    * {
+        box-sizing: border-box;
+      }
+
+}
+
+
+
