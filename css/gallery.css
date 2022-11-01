@@ -1,11 +1,63 @@
 @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
-body.gallery body {
-  font-family: "Muli", sans-serif;
-  overflow: hidden;
+body.gallery {
   margin: 0;
+  overflow: hidden;
+  background: #515151;
+  height: 100vh;
+  font-family: "Muli", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 body.gallery * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+body.gallery .container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 20px;
+}
+body.gallery .container .slide {
+  height: 80vh;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  color: #fff;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+body.gallery .container .slide h3 {
+  position: absolute;
+  font-size: 1.5rem;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+body.gallery .container .slide.active {
+  -webkit-box-flex: 10;
+      -ms-flex: 10;
+          flex: 10;
+}
+body.gallery .container .slide.active h3 {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in-out 0.4s;
+  transition: opacity 0.3s ease-in-out 0.4s;
 }
 /*# sourceMappingURL=gallery.css.map */
