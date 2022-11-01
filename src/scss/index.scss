@@ -12,7 +12,7 @@ $green: #CBFB45;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 235px;
+    height: 450px;
     width: 585px;
     border-radius: 27px;
     font-size: 1.5rem;
@@ -45,40 +45,62 @@ body.index {
             place-items: center;
 
             .header {
-                margin: 3% auto;
+                margin: 1.5% auto;
                 text-align: center;
 
-                & h1 {
+                .animated {
+                    background: linear-gradient(-45deg, #6355a4, #6355a4, #CBFB45, #CBFB45);
+	                background-size: 300%;
+	                text-transform: uppercase;
+	                -webkit-background-clip: text;
+	                -webkit-text-fill-color: transparent;
+	                animation: animated_text 10s ease-in-out infinite;
+	                -moz-animation: animated_text 10s ease-in-out infinite;
+	                -webkit-animation: animated_text 10s ease-in-out infinite;
                     font-family: Inter;
                     font-weight: 400;
-                    font-size: 5rem;
+                    font-size: 5.5rem;
                     color: $white;
                     padding-bottom: 1.5%;
-
                 }
+
+                @keyframes animated_text {
+                    0% { background-position: 0px 50%; }
+                    50% { background-position: 100% 50%; }
+                    100% { background-position: 0px 50%; }
+                }
+
                 & h2 {
                     font-family: Inter;
                     font-weight: 200;
-                    font-size: 1.5rem;
+                    font-size: 1.4rem;
                     color: $white;
                     & b {
                         color: $green;
+                    }
+                    & a {
+                        color: $green;
+                        font-weight: 400;
+                        &:hover {
+                            color: $grey2;
+                        }
                     }
                 }
             }
         }
     }
 
-    .block-shortcuts {
+    .items {
         padding-top: 2.5%;
         padding-bottom: 5%;
         width: 100%;
 
-        .block-shortcuts-grid {
+        .items-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(585px, 1fr));
+            place-items: center;
             column-gap: 1.5%;
-            row-gap: 5%
+            row-gap: 3%
         }
 
         .block-shortcut-item {
@@ -103,29 +125,3 @@ body.index {
         }
     }
 }
-
-
-
-// .flex-links {
-//     padding-top: 2%;
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-between;
-//     width: 500px;
-
-//     & h1 {
-//         font-size: 3rem;
-//         color: $white;
-//         & :hover {
-//             color: $white-hov;
-//         }
-//     }
-//     & h2 {
-//         font-size: 1.5rem;
-//         color: $green;
-//         }
-// }
-
-// .links:hover {
-//     color: $black2;
-// }
