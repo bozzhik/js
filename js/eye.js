@@ -1,6 +1,5 @@
 let num = 0;
 for (; num < 5; num++) {
-    console.log(num);
-    if (num==5) break;
+    if (num == 2) continue;
+console.log(num)
 }
-console.log(`работа окончена, результат = ${num}`)

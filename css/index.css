@@ -1,3 +1,29 @@
+body.index .block-shortcuts .block-shortcut-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 235px;
+  width: 585px;
+  border-radius: 27px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #DADADA;
+  background-color: #1E1E1E;
+  cursor: help;
+}
+
+body.index .block-shortcuts .block-shortcut-item:hover {
+  color: #868686;
+  background-color: #141414;
+}
+
 body.index {
   background-color: #0A0A0A;
   font-family: Helvetica;
@@ -9,8 +35,7 @@ body.index a {
 body.index .container {
   padding: 2%;
 }
-body.index .block {
-  padding-top: 20%;
+body.index .container .block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,32 +45,49 @@ body.index .block {
           flex-direction: column;
   place-items: center;
 }
-body.index .flex-links {
-  padding-top: 2%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 500px;
+body.index .container .block .header {
+  margin: 3% auto;
+  text-align: center;
 }
-body.index h1 {
-  font-size: 3rem;
+body.index .container .block .header h1 {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 5rem;
+  color: #DADADA;
+  padding-bottom: 1.5%;
+}
+body.index .container .block .header h2 {
+  font-family: Inter;
+  font-weight: 200;
+  font-size: 1.5rem;
   color: #DADADA;
 }
-body.index h1 :hover {
-  color: #868686;
-}
-body.index h2 {
-  font-size: 1.5rem;
+body.index .container .block .header h2 b {
   color: #CBFB45;
 }
-body.index .links:hover {
-  color: #1E1E1E;
+body.index .block-shortcuts {
+  padding-top: 2.5%;
+  padding-bottom: 5%;
+  width: 100%;
+}
+body.index .block-shortcuts .block-shortcuts-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(585px, 1fr));
+  -webkit-column-gap: 1.5%;
+     -moz-column-gap: 1.5%;
+          column-gap: 1.5%;
+  row-gap: 5%;
+}
+body.index .block-shortcuts .block-shortcut-item h2 {
+  margin: 4% 0 1% 6%;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  font-weight: 400;
+}
+body.index .block-shortcuts .block-shortcut-item h1 {
+  margin: 4% 0 1% 6%;
+  font-size: 2.5rem;
+  font-weight: 500;
 }
 /*# sourceMappingURL=index.css.map */

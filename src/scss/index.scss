@@ -6,6 +6,27 @@ $white-hov: #868686;
 $grey2: #515151;
 $green: #CBFB45;
 
+
+
+%menu-shortcut {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 235px;
+    width: 585px;
+    border-radius: 27px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $white;
+    background-color: $black2;
+    cursor: help;
+}
+
+%menu-shortcut-hover {
+    color: $white-hov;
+    background-color: $black-hov;
+}
+
 body.index {
     background-color: $black;
     font-family: Helvetica;
@@ -17,32 +38,94 @@ body.index {
     
     .container {
         padding: 2%;
-    }
-    .block {
-        padding-top: 20%;
-        display: flex;
-        flex-direction: column;
-        place-items: center;
-    }
-    .flex-links {
-        padding-top: 2%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 500px;
-    }
-    & h1 {
-        font-size: 3rem;
-        color: $white;
-        & :hover {
-            color: $white-hov;
+        
+        .block {
+            display: flex;
+            flex-direction: column;
+            place-items: center;
+
+            .header {
+                margin: 3% auto;
+                text-align: center;
+
+                & h1 {
+                    font-family: Inter;
+                    font-weight: 400;
+                    font-size: 5rem;
+                    color: $white;
+                    padding-bottom: 1.5%;
+
+                }
+                & h2 {
+                    font-family: Inter;
+                    font-weight: 200;
+                    font-size: 1.5rem;
+                    color: $white;
+                    & b {
+                        color: $green;
+                    }
+                }
+            }
         }
     }
-    & h2 {
-        font-size: 1.5rem;
-        color: $green;
+
+    .block-shortcuts {
+        padding-top: 2.5%;
+        padding-bottom: 5%;
+        width: 100%;
+
+        .block-shortcuts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(585px, 1fr));
+            column-gap: 1.5%;
+            row-gap: 5%
         }
-    .links:hover {
-        color: $black2;
+
+        .block-shortcut-item {
+            @extend %menu-shortcut;
+
+            &:hover {
+                @extend %menu-shortcut-hover;
+            }
+
+            & h2 {
+                margin: 4% 0 1% 6%;
+                font-size: 1.4rem;
+                line-height: 1.7rem;
+                font-weight: 400;
+            }
+
+            & h1 {
+                margin: 4% 0 1% 6%;
+                font-size: 2.5rem;
+                font-weight: 500;
+            }
+        }
     }
 }
+
+
+
+// .flex-links {
+//     padding-top: 2%;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     width: 500px;
+
+//     & h1 {
+//         font-size: 3rem;
+//         color: $white;
+//         & :hover {
+//             color: $white-hov;
+//         }
+//     }
+//     & h2 {
+//         font-size: 1.5rem;
+//         color: $green;
+//         }
+// }
+
+// .links:hover {
+//     color: $black2;
+// }
