@@ -9,13 +9,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <body class="drag-drop">
-<div class="container">
-  <div class="slide" style="background-image: url('img/gallery/img1.jpg');"><h3>Wild West city</h3></div>
-  <div class="slide" style="background-image: url('img/gallery/img2.jpg');"><h3>Fortress</h3></div>
-  <div class="slide" style="background-image: url('img/gallery/img3.jpg');"><h3>Cottage</h3></div>
-  <div class="slide" style="background-image: url('img/gallery/img4.jpg');"><h3>Mountain</h3></div>
-  <div class="slide" style="background-image: url('img/gallery/img5.jpg');"><h3>Subway</h3></div>
-</div>
+  <div>
+    <div class="row">
+      <div class="col-header start">Начать</div>
+      <div class="col-header progress">В процессе</div>
+      <div class="col-header done">Готовo</div>
+    </div>
+
+    <div class="row">
+      <div class="placeholder">
+        <div class="item" draggable="true">Перетащи меня</div>
+      </div>
+      <div class="placeholder"></div>
+      <div class="placeholder"></div>
+    </div>
+  </div>
 <script src="js/drag-drop.js"></script>
 </body>
 </html>
