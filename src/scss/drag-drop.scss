@@ -1,11 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
-
 $black: #0A0A0A;
 $white: #DADADA;
 $grey: #515151;
 
 body.drag-drop {
-    font-family: "Roboto", sans-serif;
+    font-family: Inter;
     background-color: $white;
     display: flex;
     padding-top: 5rem;
@@ -25,6 +23,7 @@ body.drag-drop {
       }
       
       .col-header {
+        text-align: center;
         width: 150px;
         box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
         border-radius: 20px;
@@ -38,11 +37,16 @@ body.drag-drop {
         border: 1px solid #eee;
         box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
         border-radius: 20px;
-        background: #f7f6f7;
-        padding: 0.8rem 1rem;
-        color: #828282;
-        text-align: center;
+        background: #fff;
+        padding: 0.6rem 1rem;
         cursor: grab;
+        
+        &  h1 {
+            color: #828282;
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 400;
+        }
       }
       
       .item:active {
@@ -51,7 +55,7 @@ body.drag-drop {
       
       .placeholder {
         width: 150px;
-        height: 66px;
+        height: 65px;
       }
       
       .start {
