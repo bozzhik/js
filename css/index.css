@@ -1,29 +1,3 @@
-body.index .items .block-shortcut-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  height: 450px;
-  width: 585px;
-  border-radius: 27px;
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: #DADADA;
-  background-color: #1E1E1E;
-  cursor: help;
-}
-
-body.index .items .block-shortcut-item:hover {
-  color: #868686;
-  background-color: #141414;
-}
-
 body.index {
   background-color: #0A0A0A;
   font-family: Inter;
@@ -59,8 +33,6 @@ body.index .container .block .header .animated {
   -moz-animation: animated_text 10s ease-in-out infinite;
   -webkit-animation: animated_text 10s ease-in-out infinite;
   font-family: Inter;
-  font-weight: 400;
-  font-size: 5.5rem;
   color: #DADADA;
   padding-bottom: 1.5%;
 }
@@ -86,8 +58,11 @@ body.index .container .block .header .animated {
     background-position: 0px 50%;
   }
 }
+body.index .container .block .header h1 {
+  font-weight: 600;
+  font-size: 11rem;
+}
 body.index .container .block .header h2 {
-  font-family: Inter;
   font-weight: 200;
   font-size: 1.4rem;
   color: #DADADA;
@@ -117,15 +92,174 @@ body.index .items .items-grid {
           column-gap: 1.5%;
   row-gap: 3%;
 }
+body.index .items .block-shortcut-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 450px;
+  width: 585px;
+  border-radius: 27px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #DADADA;
+  background-color: #1E1E1E;
+  cursor: help;
+}
+body.index .items .block-shortcut-item:hover {
+  color: #868686;
+  background-color: #141414;
+}
 body.index .items .block-shortcut-item h2 {
   margin: 4% 0 5% 6%;
   font-size: 1.4rem;
   line-height: 1.7rem;
   font-weight: 400;
+  color: bl;
 }
 body.index .items .block-shortcut-item h1 {
   margin: 4% 0 1% 6%;
   font-size: 2.5rem;
   font-weight: 500;
+}
+
+@media only screen and (min-width: 360px) and (max-device-width: 1366px) {
+  body.index {
+    background-color: #0A0A0A;
+    font-family: Inter;
+    font-weight: 300;
+  }
+  body.index a {
+    text-decoration: none;
+  }
+  body.index .container {
+    padding: 2%;
+  }
+  body.index .container .block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    place-items: center;
+  }
+  body.index .container .block .header {
+    margin: 1.5% auto;
+    text-align: center;
+  }
+  body.index .container .block .header .animated {
+    background: linear-gradient(-45deg, #6355a4, #6355a4, #CBFB45, #CBFB45);
+    background-size: 300%;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animated_text 10s ease-in-out infinite;
+    -moz-animation: animated_text 10s ease-in-out infinite;
+    -webkit-animation: animated_text 10s ease-in-out infinite;
+    font-family: Inter;
+    color: #DADADA;
+    padding-bottom: 1.5%;
+  }
+  @-webkit-keyframes animated_text {
+    0% {
+      background-position: 0px 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0px 50%;
+    }
+  }
+  @keyframes animated_text {
+    0% {
+      background-position: 0px 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0px 50%;
+    }
+  }
+  body.index .container .block .header h1 {
+    font-weight: 600;
+    font-size: 3rem;
+  }
+  body.index .container .block .header h2 {
+    font-weight: 200;
+    font-size: 1rem;
+    padding: 8%;
+    color: #DADADA;
+  }
+  body.index .container .block .header h2 b {
+    color: #CBFB45;
+  }
+  body.index .container .block .header h2 a {
+    color: #CBFB45;
+    font-weight: 400;
+  }
+  body.index .container .block .header h2 a:hover {
+    color: #515151;
+  }
+  body.index .items {
+    padding-top: 2.5%;
+    padding-bottom: 5%;
+    width: 100%;
+  }
+  body.index .items .items-grid {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+    place-items: center;
+    -webkit-column-gap: 1.5%;
+       -moz-column-gap: 1.5%;
+            column-gap: 1.5%;
+    row-gap: 3%;
+  }
+  body.index .items .block-shortcut-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    height: 225px;
+    width: 325px;
+    border-radius: 27px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #DADADA;
+    background-color: #1E1E1E;
+    cursor: help;
+  }
+  body.index .items .block-shortcut-item:hover {
+    color: #868686;
+    background-color: #141414;
+  }
+  body.index .items .block-shortcut-item h2 {
+    margin: 4% 0 5% 6%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+  }
+  body.index .items .block-shortcut-item h1 {
+    margin: 11% 0 1% 6%;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 500;
+  }
 }
 /*# sourceMappingURL=index.css.map */

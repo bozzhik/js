@@ -7,26 +7,6 @@ $grey2: #515151;
 $green: #CBFB45;
 
 
-
-%menu-shortcut {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 450px;
-    width: 585px;
-    border-radius: 27px;
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: $white;
-    background-color: $black2;
-    cursor: help;
-}
-
-%menu-shortcut-hover {
-    color: $white-hov;
-    background-color: $black-hov;
-}
-
 body.index {
     background-color: $black;
     font-family: Inter;
@@ -58,8 +38,6 @@ body.index {
 	                -moz-animation: animated_text 10s ease-in-out infinite;
 	                -webkit-animation: animated_text 10s ease-in-out infinite;
                     font-family: Inter;
-                    font-weight: 400;
-                    font-size: 5.5rem;
                     color: $white;
                     padding-bottom: 1.5%;
                 }
@@ -70,8 +48,12 @@ body.index {
                     100% { background-position: 0px 50%; }
                 }
 
+                & h1 {
+                    font-weight: 600;
+                    font-size: 11rem;
+                }
+
                 & h2 {
-                    font-family: Inter;
                     font-weight: 200;
                     font-size: 1.4rem;
                     color: $white;
@@ -104,10 +86,21 @@ body.index {
         }
 
         .block-shortcut-item {
-            @extend %menu-shortcut;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            height: 450px;
+            width: 585px;
+            border-radius: 27px;
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: $white;
+            background-color: $black2;
+            cursor: help;
 
             &:hover {
-                @extend %menu-shortcut-hover;
+                color: $white-hov;
+                background-color: $black-hov;
             }
 
             & h2 {
@@ -115,12 +108,130 @@ body.index {
                 font-size: 1.4rem;
                 line-height: 1.7rem;
                 font-weight: 400;
+                color: bl;
             }
 
             & h1 {
                 margin: 4% 0 1% 6%;
                 font-size: 2.5rem;
                 font-weight: 500;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-device-width: 1366px) {
+
+    body.index {
+        background-color: $black;
+        font-family: Inter;
+        font-weight: 300;
+    
+        & a {
+            text-decoration: none;
+        }
+        
+        .container {
+            padding: 2%;
+            
+            .block {
+                display: flex;
+                flex-direction: column;
+                place-items: center;
+    
+                .header {
+                    margin: 1.5% auto;
+                    text-align: center;
+    
+                    .animated {
+                        background: linear-gradient(-45deg, #6355a4, #6355a4, #CBFB45, #CBFB45);
+                        background-size: 300%;
+                        text-transform: uppercase;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        animation: animated_text 10s ease-in-out infinite;
+                        -moz-animation: animated_text 10s ease-in-out infinite;
+                        -webkit-animation: animated_text 10s ease-in-out infinite;
+                        font-family: Inter;
+                        color: $white;
+                        padding-bottom: 1.5%;
+                    }
+    
+                    @keyframes animated_text {
+                        0% { background-position: 0px 50%; }
+                        50% { background-position: 100% 50%; }
+                        100% { background-position: 0px 50%; }
+                    }
+    
+                    & h1 {
+                        font-weight: 600;
+                        font-size: 3rem;
+                    }
+    
+                    & h2 {
+                        font-weight: 200;
+                        font-size: 1rem;
+                        padding: 8%;
+                        color: $white;
+                        & b {
+                            color: $green;
+                        }
+                        & a {
+                            color: $green;
+                            font-weight: 400;
+                            &:hover {
+                                color: $grey2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        .items {
+            padding-top: 2.5%;
+            padding-bottom: 5%;
+            width: 100%;
+    
+            .items-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+                place-items: center;
+                column-gap: 1.5%;
+                row-gap: 3%
+            }
+    
+            .block-shortcut-item {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                height: 225px;
+                width: 325px;
+                border-radius: 27px;
+                font-size: 1.5rem;
+                font-weight: 500;
+                color: $white;
+                background-color: $black2;
+                cursor: help;
+    
+                &:hover {
+                    color: $white-hov;
+                    background-color: $black-hov;
+                }
+    
+                & h2 {
+                    margin: 4% 0 5% 6%;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    font-weight: 400;
+                }
+    
+                & h1 {
+                    margin: 11% 0 1% 6%;
+                    font-size: 2.5rem;
+                    line-height: 3rem;
+                    font-weight: 500;
+                }
             }
         }
     }
