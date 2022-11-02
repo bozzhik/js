@@ -92,7 +92,7 @@ body.index .items .items-grid {
           column-gap: 1.5%;
   row-gap: 3%;
 }
-body.index .items .block-shortcut-item {
+body.index .items .block-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,18 +112,18 @@ body.index .items .block-shortcut-item {
   background-color: #1E1E1E;
   cursor: help;
 }
-body.index .items .block-shortcut-item:hover {
+body.index .items .block-item:hover {
   color: #868686;
   background-color: #141414;
 }
-body.index .items .block-shortcut-item h2 {
+body.index .items .block-item h2 {
   margin: 4% 0 5% 6%;
   font-size: 1.4rem;
   line-height: 1.7rem;
   font-weight: 400;
   color: bl;
 }
-body.index .items .block-shortcut-item h1 {
+body.index .items .block-item h1 {
   margin: 4% 0 1% 6%;
   font-size: 2.5rem;
   font-weight: 500;
@@ -160,7 +160,7 @@ body.index .items .block-shortcut-item h1 {
             column-gap: 1.5%;
     row-gap: 3%;
   }
-  body.index .items .block-shortcut-item {
+  body.index .items .block-item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -180,17 +180,17 @@ body.index .items .block-shortcut-item h1 {
     background-color: #1E1E1E;
     cursor: help;
   }
-  body.index .items .block-shortcut-item:hover {
+  body.index .items .block-item:hover {
     color: #868686;
     background-color: #141414;
   }
-  body.index .items .block-shortcut-item h2 {
+  body.index .items .block-item h2 {
     margin: 4% 0 5% 6%;
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: 400;
   }
-  body.index .items .block-shortcut-item h1 {
+  body.index .items .block-item h1 {
     margin: 11% 0 1% 6%;
     font-size: 2.5rem;
     line-height: 3rem;

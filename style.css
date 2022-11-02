@@ -2,6 +2,7 @@
 @import 'css/index.css';
 @import 'css/slider.css';
 @import 'css/drag-drop.css';
+@import 'css/swap.css';
 
 @font-face {
     font-family: 'Inter';
