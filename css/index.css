@@ -130,66 +130,6 @@ body.index .items .block-shortcut-item h1 {
 }
 
 @media only screen and (min-width: 360px) and (max-device-width: 1366px) {
-  body.index {
-    background-color: #0A0A0A;
-    font-family: Inter;
-    font-weight: 300;
-  }
-  body.index a {
-    text-decoration: none;
-  }
-  body.index .container {
-    padding: 2%;
-  }
-  body.index .container .block {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    place-items: center;
-  }
-  body.index .container .block .header {
-    margin: 1.5% auto;
-    text-align: center;
-  }
-  body.index .container .block .header .animated {
-    background: linear-gradient(-45deg, #6355a4, #6355a4, #CBFB45, #CBFB45);
-    background-size: 300%;
-    text-transform: uppercase;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: animated_text 10s ease-in-out infinite;
-    -moz-animation: animated_text 10s ease-in-out infinite;
-    -webkit-animation: animated_text 10s ease-in-out infinite;
-    font-family: Inter;
-    color: #DADADA;
-    padding-bottom: 1.5%;
-  }
-  @-webkit-keyframes animated_text {
-    0% {
-      background-position: 0px 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0px 50%;
-    }
-  }
-  @keyframes animated_text {
-    0% {
-      background-position: 0px 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0px 50%;
-    }
-  }
   body.index .container .block .header h1 {
     font-weight: 600;
     font-size: 3rem;
@@ -209,11 +149,6 @@ body.index .items .block-shortcut-item h1 {
   }
   body.index .container .block .header h2 a:hover {
     color: #515151;
-  }
-  body.index .items {
-    padding-top: 2.5%;
-    padding-bottom: 5%;
-    width: 100%;
   }
   body.index .items .items-grid {
     display: -ms-grid;
