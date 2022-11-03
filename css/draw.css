@@ -24,22 +24,6 @@ body.draw .block {
       -ms-flex-pack: center;
           justify-content: center;
 }
-body.draw .button-color {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  margin: 2%;
-  background: #CBFB45;
-  -webkit-box-shadow: 0 0 2px #CBFB45;
-          box-shadow: 0 0 2px #CBFB45;
-  -webkit-box-shadow: 0 0 10px #CBFB45;
-          box-shadow: 0 0 10px #CBFB45;
-}
-body.draw .button-color a {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
 body.draw .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -61,8 +45,8 @@ body.draw .square {
   margin: 2px;
   -webkit-box-shadow: 0 0 2px #0A0A0A;
           box-shadow: 0 0 2px #0A0A0A;
-  -webkit-transition: 3s ease;
-  transition: 3s ease;
+  -webkit-transition: 6s ease;
+  transition: 6s ease;
 }
 body.draw .square:hover {
   -webkit-transition-duration: 0s;

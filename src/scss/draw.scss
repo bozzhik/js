@@ -25,23 +25,21 @@ body.draw {
         justify-content: center;
       }
       
-      .button-color {
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        margin: 2%;
-        background: #CBFB45;
-        box-shadow: 0 0 2px #CBFB45;
-        box-shadow: 0 0 10px #CBFB45;
-        
-        & a {
-          position: absolute;
-          height: 100%;
-          width: 100%;
-        }
-      }
+      // .button-color {
+      //   position: absolute;
+      //   width: 20px;
+      //   height: 20px;
+      //   margin: 2%;
+      //   background: #CBFB45;
+      //   box-shadow: 0 0 2px #CBFB45;
+      //   box-shadow: 0 0 10px #CBFB45;
 
-
+      //   & a {
+      //     position: absolute;
+      //     height: 100%;
+      //     width: 100%;
+      //   }
+      // }
 
       .container {
         display: flex;
@@ -57,7 +55,7 @@ body.draw {
         background-color: #1d1d1d;
         margin: 2px;
         box-shadow: 0 0 2px $black;
-        transition: 3s ease;
+        transition: 6s ease;
 
         &:hover {
           transition-duration: 0s;
