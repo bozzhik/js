@@ -4,6 +4,7 @@ const colors = ['#e74c3c', '#8e44ad', '#3498db', '#e67e22', '#2ecc71']
 const black = ['#0A0A0A']
 const SQUARES_NUMBER = 400
 
+
 for (let i = 0; i < SQUARES_NUMBER; i++) {
     const square = document.createElement('div')
     square.classList.add('square')

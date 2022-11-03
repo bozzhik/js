@@ -45,8 +45,8 @@ body.draw .square {
   margin: 2px;
   -webkit-box-shadow: 0 0 2px #0A0A0A;
           box-shadow: 0 0 2px #0A0A0A;
-  -webkit-transition: 6s ease;
-  transition: 6s ease;
+  -webkit-transition: 5s ease;
+  transition: 5s ease;
 }
 body.draw .square:hover {
   -webkit-transition-duration: 0s;
