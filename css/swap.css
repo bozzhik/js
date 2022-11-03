@@ -1,6 +1,5 @@
 body.swap {
-  font-family: Inter;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter";
   height: 100vh;
 }
 body.swap * {
@@ -8,6 +7,10 @@ body.swap * {
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+body.swap a {
+  text-decoration: none;
+  color: #CBFB45;
 }
 body.swap .container {
   position: relative;

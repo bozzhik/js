@@ -1,16 +1,20 @@
 $black: #0A0A0A;
 $white: #DADADA;
 $grey: #515151;
+$green: #CBFB45;
 
 body.swap {
-    font-family: Inter;
-    font-family: "Roboto", sans-serif;
+    font-family: "Inter";
     height: 100vh;
 
     * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+      }
+      a {
+        text-decoration: none;
+        color: $green;
       }
     
       .container {

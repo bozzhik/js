@@ -3,7 +3,7 @@ body.slider {
   overflow: hidden;
   background: #0A0A0A;
   height: 100vh;
-  font-family: Inter;
+  font-family: "Inter";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

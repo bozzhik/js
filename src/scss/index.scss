@@ -8,9 +8,9 @@ $green: #CBFB45;
 
 
 body.index {
-    background-color: $black;
-    font-family: Inter;
+    font-family: "Inter";
     font-weight: 300;
+    background-color: $black;
 
     & a {
         text-decoration: none;
