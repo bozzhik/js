@@ -24,9 +24,16 @@ downBtn.addEventListener('click', () => {
 document.addEventListener('keydown', event => {
     if (event.key === 'ArrowUp') {
         changeSlide('up')
-    } else if (event.key === 'ArrowDown') {
+    } 
+    else if (event.key === 'ArrowDown') {
         changeSlide('down')
-    }
+    } 
+    else if (event.key === 'ArrowLeft') {
+        window.location.href = 'index.html';
+    } 
+    else if (event.key === 'ArrowRight') {
+        window.location.href = 'swap.html';
+}
 })
 
 
