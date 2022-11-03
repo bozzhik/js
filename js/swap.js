@@ -1,20 +1,44 @@
-function slidesPlugin(activeSlide) {
-    const  slides = document.querySelectorAll('.slide');
+const upBtn = document.querySelector('.up-button')
 
-    slides[1].classList.add('active');
-    
-    for (const slide of slides) {
-        slide.addEventListener('click', () => {
-            clearActiveClasses()
-            slide.classList.add('active')
-        })
+const downBtn = document.querySelector('.down-button')
+
+const sidebar = document.querySelector('.sidebar')
+
+const mainSlide = document.querySelector('.main-slide')
+const slidesCount = mainSlide.querySelectorAll('div').length
+
+let activeSlideIndex = 0
+
+const container = document.querySelector('.container')
+
+sidebar.style.top = `-${(slidesCount -1 ) * 100}vh`
+
+upBtn.addEventListener('click', () => {
+    changeSlide('up')
+})
+
+downBtn.addEventListener('click', () => {
+    changeSlide('down')
+})
+
+function changeSlide(direction) {
+    if (direction === 'down') {
+        activeSlideIndex++
+        if (activeSlideIndex === slidesCount)
+        {
+            activeSlideIndex = 0
+        }
+    } else if (direction === 'up') {
+        activeSlideIndex --
+        if (activeSlideIndex < 0) {
+            activeSlideIndex = slidesCount - 1
+        }
     }
-    
-    function clearActiveClasses () {
-        slides.forEach((slide) => {
-            slide.classList.remove('active')
-        })
-    }
+
+const height = container.clientHeight
+
+mainSlide.style.transform = `translateY(-${activeSlideIndex * height}px)`
+
+sidebar.style.transform = `translateY(${activeSlideIndex * height}px)`
+
 }
-
-slidesPlugin(1);
