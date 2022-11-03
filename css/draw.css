@@ -1,7 +1,19 @@
-body.drow {
+body.draw {
   font-family: "Inter";
-  height: 100vh;
   background-color: #0A0A0A;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+body.draw * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body.draw .block {
+  height: 100vh;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,14 +23,49 @@ body.drow {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0;
 }
-body.drow * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+body.draw .button-color {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin: 2%;
+  background: #CBFB45;
+  -webkit-box-shadow: 0 0 2px #CBFB45;
+          box-shadow: 0 0 2px #CBFB45;
+  -webkit-box-shadow: 0 0 10px #CBFB45;
+          box-shadow: 0 0 10px #CBFB45;
+}
+body.draw .button-color a {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+body.draw .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 490px;
+}
+body.draw .square {
+  width: 20px;
+  height: 20px;
+  background-color: #1d1d1d;
+  margin: 2px;
+  -webkit-box-shadow: 0 0 2px #0A0A0A;
+          box-shadow: 0 0 2px #0A0A0A;
+  -webkit-transition: 3s ease;
+  transition: 3s ease;
+}
+body.draw .square:hover {
+  -webkit-transition-duration: 0s;
+          transition-duration: 0s;
 }
 /*# sourceMappingURL=draw.css.map */

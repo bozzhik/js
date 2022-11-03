@@ -3,13 +3,10 @@ $white: #DADADA;
 $grey: #515151;
 $green: #CBFB45;
 
-body.drow {
+body.draw {
     font-family: "Inter";
-    height: 100vh;
     background-color: $black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
     height: 100vh;
     overflow: hidden;
     margin: 0;
@@ -20,6 +17,52 @@ body.drow {
         padding: 0;
       }
       
+      .block {
+        height: 100vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .button-color {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        margin: 2%;
+        background: #CBFB45;
+        box-shadow: 0 0 2px #CBFB45;
+        box-shadow: 0 0 10px #CBFB45;
+        
+        & a {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 490px;
+      }
+
+      .square {
+        width: 20px;
+        height: 20px;
+        background-color: #1d1d1d;
+        margin: 2px;
+        box-shadow: 0 0 2px $black;
+        transition: 3s ease;
+
+        &:hover {
+          transition-duration: 0s;
+        }
+      }
 }
 
 
