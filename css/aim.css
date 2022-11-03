@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Khula&display=swap");
 body.aim {
-  color: #fff;
+  color: #DADADA;
   font-family: "Inter";
   height: 100vh;
   overflow: hidden;
@@ -12,11 +12,11 @@ body.aim * {
           box-sizing: border-box;
 }
 body.aim a {
-  color: #fff;
+  color: #DADADA;
   text-decoration: none;
 }
 body.aim a:hover {
-  color: #16d9e3;
+  color: #515151;
 }
 body.aim .start {
   font-size: 1.5rem;
@@ -24,6 +24,7 @@ body.aim .start {
 body.aim h1 {
   line-height: 1.4;
   font-size: 4rem;
+  color: #CBFB45;
 }
 body.aim .screen {
   display: -webkit-box;
@@ -43,13 +44,13 @@ body.aim .screen {
   width: 100vw;
   -webkit-transition: margin 0.5s ease-out;
   transition: margin 0.5s ease-out;
-  background: -webkit-gradient(linear, left top, right top, from(#29323c), to(#485563));
-  background: linear-gradient(90deg, #29323c 0%, #485563 100%);
+  background: #0A0A0A;
 }
 body.aim .screen.up {
   margin-top: -100vh;
 }
 body.aim .time-list {
+  margin-top: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,22 +67,22 @@ body.aim .time-list li {
 }
 body.aim .time-btn {
   background-color: transparent;
-  border: 2px solid #c0c0c0;
-  color: #fff;
+  border: 2px solid #DADADA;
+  color: #DADADA;
   cursor: pointer;
   font-family: inherit;
   padding: 0.5rem 1rem;
   font-size: 1.5rem;
 }
 body.aim .time-btn:hover {
-  border: 2px solid #16d9e3;
-  color: #16d9e3;
+  border: 2px solid #CBFB45;
+  color: #CBFB45;
 }
 body.aim .hide {
   opacity: 0;
 }
 body.aim .primary {
-  color: #16d9e3;
+  color: #CBFB45;
 }
 body.aim .board {
   display: -webkit-box;
@@ -96,11 +97,14 @@ body.aim .board {
   position: relative;
   width: 500px;
   height: 500px;
-  background: linear-gradient(118.38deg, #29323c -4.6%, #485563 200.44%);
-  -webkit-box-shadow: -8px -8px 20px #2a333d, 10px 7px 20px #475462;
-          box-shadow: -8px -8px 20px #2a333d, 10px 7px 20px #475462;
+  background: #2b2b2b;
+  -webkit-box-shadow: 0px 0px 20px #2b2b2b;
+          box-shadow: 0px 0px 20px #2b2b2b;
   border-radius: 30px;
   overflow: hidden;
+}
+body.aim h3 {
+  padding-bottom: 1%;
 }
 body.aim .circle {
   background: -webkit-gradient(linear, left top, right top, from(#16d9e3), color-stop(47%, #30c7ec), to(#46aef7));
@@ -108,5 +112,23 @@ body.aim .circle {
   position: absolute;
   border-radius: 50%;
   cursor: pointer;
+}
+body.aim .win-switch {
+  width: 120px;
+  height: 30px;
+  border-radius: 40px;
+  background: #DADADA;
+  color: #0A0A0A;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  cursor: pointer;
+}
+body.aim .win-switch :hover {
+  border-radius: 40px;
+  background: #CBFB45;
+  color: #515151;
+}
+body.aim .win-switch .play-again a {
+  color: #CBFB45;
 }
 /*# sourceMappingURL=aim.css.map */

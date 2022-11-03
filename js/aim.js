@@ -3,6 +3,8 @@ const screens = document.querySelectorAll('.screen')
 const timeList = document.querySelector('#time-list')
 const timeEl = document.querySelector('#time')
 const board = document.querySelector('#board')
+// const colors = ['#fff', '#141414', '#515151', '#9c9c9c', '#fff']
+const colors = ['red', 'blue', 'green', 'yellow', 'purple']
 let time = 0
 let score = 0
 
@@ -52,15 +54,19 @@ function setTime(value) {
 
 function finishGame() {
     timeEl.parentNode.classList.add('hide')
-    board.innerHTML = `<h1>Cчет: <span class="primary">${score}</span></h1>`
+    board.innerHTML = `<div class='finish-game'><h1>Ваш счёт: <span class='primary'>${score}</span></h1><a class='play-again'>Нажмите чтобы сыграть ещё раз</a></div>`
+    board.addEventListener('click', ()=> {
+        playAgain()
+    })
 }
 
 function createRandomCircle() {
     const circle = document.createElement('div')
-    const size = getRandomNumber(30, 60)
+    const size = getRandomNumber(30, 50)
     const {width, height} = board.getBoundingClientRect()
     const x = getRandomNumber(0, width - size)
     const y = getRandomNumber(0, height - size)
+    const сolor = setColor(circle)
 
     circle.classList.add('circle')
     circle.style.width = `${size}px`
@@ -71,6 +77,38 @@ function createRandomCircle() {
     board.append(circle)
 }
 
+function playAgain() {
+    window.location.reload()
+}
+
 function getRandomNumber(min, max) {
     return Math.round(Math.random() * (max - min) + min)
 }
+
+function setColor(element) {
+    const color = getRandomColor()
+    element.style.background = color
+}
+
+function getRandomColor() {
+    const index = Math.floor(Math.random() * colors.length)
+    return colors[index]
+
+}
+
+function winGame() {
+    function kill() {
+        const circle = document.querySelector('.circle')
+            if (circle) {
+                circle.click()
+            }
+    }
+    setInterval(kill, getRandomNumber(20, 150))
+}
+
+const winSwitch = document.querySelector('.win-switch')
+
+winSwitch.addEventListener('click', () => {
+    winSwitch.style.opacity = '0'
+    winGame()
+})
