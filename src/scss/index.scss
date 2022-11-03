@@ -162,7 +162,7 @@ body.index {
                 grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
                 place-items: center;
                 column-gap: 1.5%;
-                row-gap: 3%
+                row-gap: 1.5%
             }
     
             .block-item {
@@ -192,7 +192,7 @@ body.index {
     
                 & h1 {
                     margin: 11% 0 1% 6%;
-                    font-size: 2.5rem;
+                    font-size: 2.35rem;
                     line-height: 3rem;
                     font-weight: 500;
                 }
