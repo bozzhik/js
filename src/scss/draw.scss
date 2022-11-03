@@ -1,0 +1,30 @@
+$black: #0A0A0A;
+$white: #DADADA;
+$grey: #515151;
+$green: #CBFB45;
+
+body.drow {
+    font-family: "Inter";
+    height: 100vh;
+    background-color: $black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      
+}
+
+
+
+  
+  
+  
+

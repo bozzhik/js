@@ -1,6 +1,8 @@
 body.swap {
   font-family: "Inter";
   height: 100vh;
+  overflow: hidden;
+  margin: 0;
 }
 body.swap * {
   -webkit-box-sizing: border-box;
