@@ -1,3 +1,12 @@
 /css/eye.css.map
+/css/aim.css.map
+/css/drag-drop.css.map
+/css/draw.css.map
 /css/index.css.map
 /css/reboot.css.map
+/css/slider.css.map
+/css/swap.css.map
+
+.gitignore
+.gitattributes
+.prettierrc

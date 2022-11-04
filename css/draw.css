@@ -1,6 +1,6 @@
 body.draw {
   font-family: "Inter";
-  background-color: #0A0A0A;
+  background-color: #0a0a0a;
   height: 100vh;
   overflow: hidden;
   margin: 0;
@@ -43,8 +43,8 @@ body.draw .square {
   height: 20px;
   background-color: #1d1d1d;
   margin: 2px;
-  -webkit-box-shadow: 0 0 2px #0A0A0A;
-          box-shadow: 0 0 2px #0A0A0A;
+  -webkit-box-shadow: 0 0 2px #0a0a0a;
+          box-shadow: 0 0 2px #0a0a0a;
   -webkit-transition: 5s ease;
   transition: 5s ease;
 }
@@ -52,4 +52,3 @@ body.draw .square:hover {
   -webkit-transition-duration: 0s;
           transition-duration: 0s;
 }
-/*# sourceMappingURL=draw.css.map */

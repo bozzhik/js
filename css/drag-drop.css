@@ -1,6 +1,6 @@
 body.drag-drop {
   font-family: "Inter";
-  background-color: #0A0A0A;
+  background-color: #0a0a0a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,7 +39,7 @@ body.drag-drop .item {
   -webkit-box-shadow: 1px 1px 15px rgba(109, 109, 109, 0.5);
           box-shadow: 1px 1px 15px rgba(109, 109, 109, 0.5);
   border-radius: 20px;
-  background: #0A0A0A;
+  background: #0a0a0a;
   padding: 0.6rem 1rem;
   cursor: -webkit-grab;
   cursor: grab;
@@ -72,8 +72,8 @@ body.drag-drop .done {
 }
 body.drag-drop .hold {
   border: 1px dashed #515151;
-  color: #DADADA;
-  background: #0A0A0A;
+  color: #dadada;
+  background: #0a0a0a;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -84,4 +84,3 @@ body.drag-drop .hovered {
   border-top: 2px dashed #515151;
   opacity: 0.5;
 }
-/*# sourceMappingURL=drag-drop.css.map */

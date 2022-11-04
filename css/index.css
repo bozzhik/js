@@ -1,7 +1,7 @@
 body.index {
   font-family: "Inter";
   font-weight: 300;
-  background-color: #0A0A0A;
+  background-color: #0a0a0a;
 }
 body.index a {
   text-decoration: none;
@@ -24,7 +24,7 @@ body.index .container .block .header {
   text-align: center;
 }
 body.index .container .block .header .animated {
-  background: linear-gradient(-45deg, #6355a4, #6355a4, #CBFB45, #CBFB45);
+  background: linear-gradient(-45deg, #6355a4, #6355a4, #cbfb45, #cbfb45);
   background-size: 300%;
   text-transform: uppercase;
   -webkit-background-clip: text;
@@ -33,7 +33,7 @@ body.index .container .block .header .animated {
   -moz-animation: animated_text 10s ease-in-out infinite;
   -webkit-animation: animated_text 10s ease-in-out infinite;
   font-family: Inter;
-  color: #DADADA;
+  color: #dadada;
   padding-bottom: 1.5%;
 }
 @-webkit-keyframes animated_text {
@@ -65,13 +65,13 @@ body.index .container .block .header h1 {
 body.index .container .block .header h2 {
   font-weight: 200;
   font-size: 1.4rem;
-  color: #DADADA;
+  color: #dadada;
 }
 body.index .container .block .header h2 b {
-  color: #CBFB45;
+  color: #cbfb45;
 }
 body.index .container .block .header h2 a {
-  color: #CBFB45;
+  color: #cbfb45;
   font-weight: 400;
 }
 body.index .container .block .header h2 a:hover {
@@ -108,8 +108,8 @@ body.index .items .block-item {
   border-radius: 27px;
   font-size: 1.5rem;
   font-weight: 500;
-  color: #DADADA;
-  background-color: #1E1E1E;
+  color: #dadada;
+  background-color: #1e1e1e;
   cursor: help;
 }
 body.index .items .block-item:hover {
@@ -138,13 +138,13 @@ body.index .items .block-item h1 {
     font-weight: 200;
     font-size: 1rem;
     padding: 8%;
-    color: #DADADA;
+    color: #dadada;
   }
   body.index .container .block .header h2 b {
-    color: #CBFB45;
+    color: #cbfb45;
   }
   body.index .container .block .header h2 a {
-    color: #CBFB45;
+    color: #cbfb45;
     font-weight: 400;
   }
   body.index .container .block .header h2 a:hover {
@@ -176,8 +176,8 @@ body.index .items .block-item h1 {
     border-radius: 27px;
     font-size: 1.5rem;
     font-weight: 500;
-    color: #DADADA;
-    background-color: #1E1E1E;
+    color: #dadada;
+    background-color: #1e1e1e;
     cursor: help;
   }
   body.index .items .block-item:hover {
@@ -197,4 +197,3 @@ body.index .items .block-item h1 {
     font-weight: 500;
   }
 }
-/*# sourceMappingURL=index.css.map */

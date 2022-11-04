@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Khula&display=swap");
 body.aim {
-  color: #DADADA;
+  color: #dadada;
   font-family: "Inter";
   height: 100vh;
   overflow: hidden;
@@ -12,7 +11,7 @@ body.aim * {
           box-sizing: border-box;
 }
 body.aim a {
-  color: #DADADA;
+  color: #dadada;
   text-decoration: none;
 }
 body.aim a:hover {
@@ -24,7 +23,7 @@ body.aim .start {
 body.aim h1 {
   line-height: 1.4;
   font-size: 4rem;
-  color: #CBFB45;
+  color: #cbfb45;
 }
 body.aim .screen {
   display: -webkit-box;
@@ -44,7 +43,7 @@ body.aim .screen {
   width: 100vw;
   -webkit-transition: margin 0.5s ease-out;
   transition: margin 0.5s ease-out;
-  background: #0A0A0A;
+  background: #0a0a0a;
 }
 body.aim .screen.up {
   margin-top: -100vh;
@@ -67,22 +66,22 @@ body.aim .time-list li {
 }
 body.aim .time-btn {
   background-color: transparent;
-  border: 2px solid #DADADA;
-  color: #DADADA;
+  border: 2px solid #dadada;
+  color: #dadada;
   cursor: pointer;
   font-family: inherit;
   padding: 0.5rem 1rem;
   font-size: 1.5rem;
 }
 body.aim .time-btn:hover {
-  border: 2px solid #CBFB45;
-  color: #CBFB45;
+  border: 2px solid #cbfb45;
+  color: #cbfb45;
 }
 body.aim .hide {
   opacity: 0;
 }
 body.aim .primary {
-  color: #CBFB45;
+  color: #cbfb45;
 }
 body.aim .board {
   display: -webkit-box;
@@ -117,18 +116,17 @@ body.aim .win-switch {
   width: 120px;
   height: 30px;
   border-radius: 40px;
-  background: #DADADA;
-  color: #0A0A0A;
+  background: #dadada;
+  color: #0a0a0a;
   font-size: 1.2rem;
   margin-top: 20px;
   cursor: pointer;
 }
 body.aim .win-switch :hover {
   border-radius: 40px;
-  background: #CBFB45;
+  background: #cbfb45;
   color: #515151;
 }
 body.aim .win-switch .play-again a {
-  color: #CBFB45;
+  color: #cbfb45;
 }
-/*# sourceMappingURL=aim.css.map */

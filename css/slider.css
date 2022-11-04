@@ -1,7 +1,7 @@
 body.slider {
   margin: 0;
   overflow: hidden;
-  background: #0A0A0A;
+  background: #0a0a0a;
   height: 100vh;
   font-family: "Inter";
   display: -webkit-box;
@@ -34,7 +34,7 @@ body.slider .container .slide {
   border-radius: 20px;
   margin: 10px;
   cursor: pointer;
-  color: #DADADA;
+  color: #dadada;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -91,4 +91,3 @@ body.slider .container .slide.active h3 {
   -webkit-transition: opacity 0.3s ease-in-out 0.4s;
   transition: opacity 0.3s ease-in-out 0.4s;
 }
-/*# sourceMappingURL=slider.css.map */
