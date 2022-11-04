@@ -1,90 +1,84 @@
-$black: #0A0A0A;
-$white: #DADADA;
+$black: #0a0a0a;
+$white: #dadada;
 $grey: #515151;
 
 body.slider {
-    margin: 0;
-    overflow: hidden;
-    background: $black;
-    height: 100vh;
-    font-family: "Inter";
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   margin: 0;
+   overflow: hidden;
+   background: $black;
+   height: 100vh;
+   font-family: 'Inter';
+   display: flex;
+   justify-content: center;
+   align-items: center;
 
-    .text {
-        display: grid;
-    }
-    
-    * {
-        box-sizing: border-box;
+   .text {
+      display: grid;
+   }
+
+   * {
+      box-sizing: border-box;
+   }
+
+   .container {
+      width: 100%;
+      display: flex;
+      padding: 0 20px;
+
+      .slide {
+         height: 80vh;
+         border-radius: 20px;
+         margin: 10px;
+         cursor: pointer;
+         color: $white;
+         flex: 1;
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
+         position: relative;
+         transition: all 500ms ease-in-out;
+
+         & h3 {
+            position: absolute;
+            font-family: Inter;
+            font-size: 1.5rem;
+            font-weight: 500;
+            bottom: 20px;
+            left: 20px;
+            margin: 0;
+            opacity: 0;
+         }
       }
-    
-    .container {
-        width: 100%;
-        display: flex;
-        padding: 0 20px;
+      .slide:nth-of-type(3) {
+         height: 80vh;
+         border-radius: 20px;
+         margin: 10px;
+         cursor: pointer;
+         color: $grey;
+         flex: 1;
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
+         position: relative;
+         transition: all 500ms ease-in-out;
 
-        .slide {
-            height: 80vh;
-            border-radius: 20px;
-            margin: 10px;
-            cursor: pointer;
-            color: $white;
-            flex: 1;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            position: relative;
-            transition: all 500ms ease-in-out;
-
-            & h3 {
-                position: absolute;
-                font-family: Inter;
-                font-size: 1.5rem;
-                font-weight: 500;
-                bottom: 20px;
-                left: 20px;
-                margin: 0;
-                opacity: 0;
-
-            }
-        }
-        .slide:nth-of-type(3) {
-            height: 80vh;
-            border-radius: 20px;
-            margin: 10px;
-            cursor: pointer;
-            color: $grey;
-            flex: 1;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            position: relative;
-            transition: all 500ms ease-in-out;
-
-            & h3 {
-                position: absolute;
-                font-family: Inter;
-                font-size: 1.5rem;
-                font-weight: 500;
-                bottom: 20px;
-                left: 20px;
-                margin: 0;
-                opacity: 0;
-
-            }
-        }
-        .slide.active {
-            flex: 10;
-            & h3 {
-                opacity: 1;
-                transition: opacity 0.3s ease-in-out 0.4s;
-            }
-        }
-    }
-
+         & h3 {
+            position: absolute;
+            font-family: Inter;
+            font-size: 1.5rem;
+            font-weight: 500;
+            bottom: 20px;
+            left: 20px;
+            margin: 0;
+            opacity: 0;
+         }
+      }
+      .slide.active {
+         flex: 10;
+         & h3 {
+            opacity: 1;
+            transition: opacity 0.3s ease-in-out 0.4s;
+         }
+      }
+   }
 }
-
-
-

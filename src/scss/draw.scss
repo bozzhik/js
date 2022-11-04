@@ -1,71 +1,63 @@
-$black: #0A0A0A;
-$white: #DADADA;
+$black: #0a0a0a;
+$white: #dadada;
 $grey: #515151;
-$green: #CBFB45;
+$green: #cbfb45;
 
 body.draw {
-    font-family: "Inter";
-    background-color: $black;
-    
-    height: 100vh;
-    overflow: hidden;
-    margin: 0;
+   font-family: 'Inter';
+   background-color: $black;
+   height: 100vh;
+   overflow: hidden;
+   margin: 0;
 
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
+   * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+   }
+
+   .block {
+      height: 100vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   // .button-color {
+   //   position: absolute;
+   //   width: 20px;
+   //   height: 20px;
+   //   margin: 2%;
+   //   background: #CBFB45;
+   //   box-shadow: 0 0 2px #CBFB45;
+   //   box-shadow: 0 0 10px #CBFB45;
+
+   //   & a {
+   //     position: absolute;
+   //     height: 100%;
+   //     width: 100%;
+   //   }
+   // }
+
+   .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      max-width: 490px;
+   }
+
+   .square {
+      width: 20px;
+      height: 20px;
+      background-color: #1d1d1d;
+      margin: 2px;
+      box-shadow: 0 0 2px $black;
+      transition: 5s ease;
+
+      &:hover {
+         transition-duration: 0s;
       }
-      
-      .block {
-        height: 100vh;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      
-      // .button-color {
-      //   position: absolute;
-      //   width: 20px;
-      //   height: 20px;
-      //   margin: 2%;
-      //   background: #CBFB45;
-      //   box-shadow: 0 0 2px #CBFB45;
-      //   box-shadow: 0 0 10px #CBFB45;
-
-      //   & a {
-      //     position: absolute;
-      //     height: 100%;
-      //     width: 100%;
-      //   }
-      // }
-
-      .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        max-width: 490px;
-      }
-
-      .square {
-        width: 20px;
-        height: 20px;
-        background-color: #1d1d1d;
-        margin: 2px;
-        box-shadow: 0 0 2px $black;
-        transition: 5s ease;
-
-        &:hover {
-          transition-duration: 0s;
-        }
-      }
+   }
 }
-
-
-
-  
-  
-  
-

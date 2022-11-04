@@ -1,96 +1,175 @@
-$black: #0A0A0A;
-$black2: #1E1E1E;
+$black: #0a0a0a;
+$black2: #1e1e1e;
 $black-hov: #141414;
-$white: #DADADA;
+$white: #dadada;
 $white-hov: #868686;
 $grey2: #515151;
-$green: #CBFB45;
-
+$green: #cbfb45;
 
 body.index {
-    font-family: "Inter";
-    font-weight: 300;
-    background-color: $black;
+   font-family: 'Inter';
+   font-weight: 300;
+   background-color: $black;
 
-    & a {
-        text-decoration: none;
-    }
-    
-    .container {
-        padding: 2%;
-        
-        .block {
-            display: flex;
-            flex-direction: column;
-            place-items: center;
+   & a {
+      text-decoration: none;
+   }
 
-            .header {
-                margin: 1.5% auto;
-                text-align: center;
+   .container {
+      padding: 2%;
 
-                .animated {
-                    background: linear-gradient(-45deg, #6355a4, #6355a4, #CBFB45, #CBFB45);
-	                background-size: 300%;
-	                text-transform: uppercase;
-	                -webkit-background-clip: text;
-	                -webkit-text-fill-color: transparent;
-	                animation: animated_text 10s ease-in-out infinite;
-	                -moz-animation: animated_text 10s ease-in-out infinite;
-	                -webkit-animation: animated_text 10s ease-in-out infinite;
-                    font-family: Inter;
-                    color: $white;
-                    padding-bottom: 1.5%;
-                }
+      .block {
+         display: flex;
+         flex-direction: column;
+         place-items: center;
 
-                @keyframes animated_text {
-                    0% { background-position: 0px 50%; }
-                    50% { background-position: 100% 50%; }
-                    100% { background-position: 0px 50%; }
-                }
+         .header {
+            margin: 1.5% auto;
+            text-align: center;
 
-                & h1 {
-                    font-weight: 600;
-                    font-size: 11rem;
-                }
-
-                & h2 {
-                    font-weight: 200;
-                    font-size: 1.4rem;
-                    color: $white;
-                    & b {
-                        color: $green;
-                    }
-                    & a {
-                        color: $green;
-                        font-weight: 400;
-                        &:hover {
-                            color: $grey2;
-                        }
-                    }
-                }
+            .animated {
+               background: linear-gradient(-45deg, #6355a4, #6355a4, #cbfb45, #cbfb45);
+               background-size: 300%;
+               text-transform: uppercase;
+               -webkit-background-clip: text;
+               -webkit-text-fill-color: transparent;
+               animation: animated_text 10s ease-in-out infinite;
+               -moz-animation: animated_text 10s ease-in-out infinite;
+               -webkit-animation: animated_text 10s ease-in-out infinite;
+               font-family: Inter;
+               color: $white;
+               padding-bottom: 1.5%;
             }
-        }
-    }
 
-    .items {
-        padding-top: 2.5%;
-        padding-bottom: 5%;
-        width: 100%;
+            @keyframes animated_text {
+               0% {
+                  background-position: 0px 50%;
+               }
+               50% {
+                  background-position: 100% 50%;
+               }
+               100% {
+                  background-position: 0px 50%;
+               }
+            }
 
-        .items-grid {
+            & h1 {
+               font-weight: 600;
+               font-size: 11rem;
+            }
+
+            & h2 {
+               font-weight: 200;
+               font-size: 1.4rem;
+               color: $white;
+               & b {
+                  color: $green;
+               }
+               & a {
+                  color: $green;
+                  font-weight: 400;
+                  &:hover {
+                     color: $grey2;
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   .items {
+      padding-top: 2.5%;
+      padding-bottom: 5%;
+      width: 100%;
+
+      .items-grid {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(585px, 1fr));
+         place-items: center;
+         column-gap: 1.5%;
+         row-gap: 3%;
+      }
+
+      .block-item {
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-start;
+         height: 450px;
+         width: 585px;
+         border-radius: 27px;
+         font-size: 1.5rem;
+         font-weight: 500;
+         color: $white;
+         background-color: $black2;
+         cursor: help;
+
+         &:hover {
+            color: $white-hov;
+            background-color: $black-hov;
+         }
+
+         & h2 {
+            margin: 4% 0 5% 6%;
+            font-size: 1.4rem;
+            line-height: 1.7rem;
+            font-weight: 400;
+            color: bl;
+         }
+
+         & h1 {
+            margin: 4% 0 1% 6%;
+            font-size: 2.5rem;
+            font-weight: 500;
+         }
+      }
+   }
+}
+
+@media only screen and (min-width: 360px) and (max-device-width: 1366px) {
+   body.index {
+      .container {
+         .block {
+            .header {
+               & h1 {
+                  font-weight: 600;
+                  font-size: 3rem;
+               }
+
+               & h2 {
+                  font-weight: 200;
+                  font-size: 1rem;
+                  padding: 8%;
+                  color: $white;
+                  & b {
+                     color: $green;
+                  }
+                  & a {
+                     color: $green;
+                     font-weight: 400;
+                     &:hover {
+                        color: $grey2;
+                     }
+                  }
+               }
+            }
+         }
+      }
+
+      .items {
+         .items-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(585px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
             place-items: center;
             column-gap: 1.5%;
-            row-gap: 3%
-        }
+            row-gap: 1.5%;
+         }
 
-        .block-item {
+         .block-item {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            height: 450px;
-            width: 585px;
+            height: 225px;
+            width: 325px;
             border-radius: 27px;
             font-size: 1.5rem;
             font-weight: 500;
@@ -99,104 +178,24 @@ body.index {
             cursor: help;
 
             &:hover {
-                color: $white-hov;
-                background-color: $black-hov;
+               color: $white-hov;
+               background-color: $black-hov;
             }
 
             & h2 {
-                margin: 4% 0 5% 6%;
-                font-size: 1.4rem;
-                line-height: 1.7rem;
-                font-weight: 400;
-                color: bl;
+               margin: 4% 0 5% 6%;
+               font-size: 1rem;
+               line-height: 1.5rem;
+               font-weight: 400;
             }
 
             & h1 {
-                margin: 4% 0 1% 6%;
-                font-size: 2.5rem;
-                font-weight: 500;
+               margin: 11% 0 1% 6%;
+               font-size: 2.35rem;
+               line-height: 3rem;
+               font-weight: 500;
             }
-        }
-    }
-}
-
-@media only screen and (min-width: 360px) and (max-device-width: 1366px) {
-
-    body.index {
-        
-        .container {
-            
-            .block {
-    
-                .header {
-    
-                    & h1 {
-                        font-weight: 600;
-                        font-size: 3rem;
-                    }
-    
-                    & h2 {
-                        font-weight: 200;
-                        font-size: 1rem;
-                        padding: 8%;
-                        color: $white;
-                        & b {
-                            color: $green;
-                        }
-                        & a {
-                            color: $green;
-                            font-weight: 400;
-                            &:hover {
-                                color: $grey2;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    
-        .items {
-    
-            .items-grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
-                place-items: center;
-                column-gap: 1.5%;
-                row-gap: 1.5%
-            }
-    
-            .block-item {
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
-                height: 225px;
-                width: 325px;
-                border-radius: 27px;
-                font-size: 1.5rem;
-                font-weight: 500;
-                color: $white;
-                background-color: $black2;
-                cursor: help;
-    
-                &:hover {
-                    color: $white-hov;
-                    background-color: $black-hov;
-                }
-    
-                & h2 {
-                    margin: 4% 0 5% 6%;
-                    font-size: 1rem;
-                    line-height: 1.5rem;
-                    font-weight: 400;
-                }
-    
-                & h1 {
-                    margin: 11% 0 1% 6%;
-                    font-size: 2.35rem;
-                    line-height: 3rem;
-                    font-weight: 500;
-                }
-            }
-        }
-    }
+         }
+      }
+   }
 }
