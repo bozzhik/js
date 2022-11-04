@@ -3,8 +3,7 @@ const screens = document.querySelectorAll('.screen')
 const timeList = document.querySelector('#time-list')
 const timeEl = document.querySelector('#time')
 const board = document.querySelector('#board')
-// const colors = ['#fff', '#141414', '#515151', '#9c9c9c', '#fff']
-const colors = ['red', 'blue', 'green', 'yellow', 'purple']
+const colors = ['#DADADA', '#0A0A0A']
 let time = 0
 let score = 0
 
@@ -102,7 +101,7 @@ function winGame() {
          circle.click()
       }
    }
-   setInterval(kill, getRandomNumber(20, 150))
+   setInterval(kill, 100)
 }
 
 const winSwitch = document.querySelector('.win-switch')
