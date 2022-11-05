@@ -6,6 +6,8 @@
 @import 'css/draw.css';
 @import 'css/aim.css';
 
+@import 'css/test.css';
+
 @font-face {
    font-family: 'Inter';
    src: url('fonts/Inter-Thin.woff2') format('woff2'), url('fonts/Inter-Thin.woff') format('woff');
