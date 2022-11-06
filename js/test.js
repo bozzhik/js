@@ -1,6 +1,7 @@
 let max = {
-   nick: ' крекер',
-   age: 13
+   age: 13,
+   'bozzhik maxim': true
 }
 
-console.log(max.age + max.nick)
+console.log(max)
+console.log(max['bozzhik maxim'])
