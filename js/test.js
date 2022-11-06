@@ -1,9 +1,11 @@
-function get() {
-   let item = 'крекер'
-   console.log(item)
+'use strict'
+
+let getSto
+
+if (2 > 1) {
+   getSto = function () {
+      let sum = 1 + 2
+      console.log(sum)
+   }
 }
-
-let getSome = get
-
-getSome()
-get()
+getSto()
