@@ -1,8 +1,5 @@
-let user = {
-   name: 'max',
-   color: 'black'
+if (' ') {
+   console.log('не')
+} else if (' ') {
+   console.log('ды')
 }
-
-user.name = 'kostea'
-
-console.log(user)
