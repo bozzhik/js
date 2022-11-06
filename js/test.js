@@ -1,9 +1,4 @@
-function show(num) {
-   console.log(num)
-   let time = setTimeout(show, 500, ++num)
-   if (num === 13) {
-      clearTimeout(time)
-   }
-}
+let max = new Object()
+let max2 = {} // !
 
-setTimeout(show, 500, 1)
+console.log(typeof max)
