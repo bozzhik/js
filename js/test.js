@@ -1,19 +1,9 @@
-function calcSum(numOne, numTwo, more, less) {
+function calcSum(numOne, numTwo) {
    let numSum = numOne + numTwo
 
-   if (numSum > 3) {
-      more()
-   } else {
-      less()
-   }
+   return numSum
 }
 
-function showMore() {
-   console.log('больше')
-}
+let funcRezult = calcSum(1, 2)
 
-function showLess() {
-   console.log('меньше')
-}
-
-calcSum(1, 1, showMore, showLess)
+console.log(`summa ${funcRezult}`)
