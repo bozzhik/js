@@ -1,4 +1,6 @@
-let max = new Object()
-let max2 = {} // !
+let max = {
+   nick: ' крекер',
+   age: 13
+}
 
-console.log(typeof max)
+console.log(max.age + max.nick)
