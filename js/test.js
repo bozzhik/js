@@ -1,6 +1,5 @@
-let getCracker = (size, tase) => {
-   let message = size + ',' + tase + '!'
-   return message
+function show(text, name) {
+   console.log(`${text}, ${name}`)
 }
-let cracker = 'крекер '
-console.log(cracker + getCracker('большой', 'сырный'))
+
+setTimeout(show, 1000, 'привет', 'крэкер')
