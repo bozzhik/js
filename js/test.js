@@ -1,9 +1,10 @@
 function calcSum(numOne, numTwo) {
-   let numSum = numOne + numTwo
+   let result = 1
 
-   return numSum
+   for (let i = 0; i < numTwo; i++) {
+      result *= numOne
+   }
+   return result
 }
 
-let funcRezult = calcSum(1, 2)
-
-console.log(`summa ${funcRezult}`)
+console.log(calcSum(2, 3))
