@@ -1,17 +1,6 @@
-// let num = 0
-// while (num < 5) {
-//    console.log(num)
-//    num++
-// }
-
-// let num = 0
-// do {
-//    console.log(num)
-//    num++
-// } while (num < 5)
-
-for (var num = 0; num < 5; num++) {
-   console.log(num)
+yaPerviy: for (let num = 0; num < 2; num++) {
+   for (let size = 0; size < 3; size++) {
+      if (size == 2) break yaPerviy
+      console.log(size)
+   }
 }
-
-console.log(`я крекер номер ${num}`)
