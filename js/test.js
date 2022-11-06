@@ -1,9 +1,19 @@
-function getMax() {
-   console.log('крекер')
-   function getMaxx() {
-      console.log('не крекер')
+function calcSum(numOne, numTwo, more, less) {
+   let numSum = numOne + numTwo
+
+   if (numSum > 3) {
+      more()
+   } else {
+      less()
    }
-   getMaxx()
 }
 
-getMax()
+function showMore() {
+   console.log('больше')
+}
+
+function showLess() {
+   console.log('меньше')
+}
+
+calcSum(1, 1, showMore, showLess)
