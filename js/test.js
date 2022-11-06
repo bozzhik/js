@@ -1,6 +1,6 @@
-function show(text, name) {
-   console.log(`${text}, ${name}`)
-   setTimeout(show, 500, text, name)
+function show(num) {
+   console.log(num)
+   if (num < 5) setTimeout(show, 500, ++num)
 }
 
-setTimeout(show, 1000, 'привет', 'крэкер')
+setTimeout(show, 500, 1)
