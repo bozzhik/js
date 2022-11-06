@@ -1,11 +1,3 @@
-'use strict'
-
-let getSto
-
-if (2 > 1) {
-   getSto = function () {
-      let sum = 1 + 2
-      console.log(sum)
-   }
-}
-getSto()
+let getCracker = (size, tase) => size + ',' + tase + '!'
+let cracker = 'крекер '
+console.log(cracker + getCracker('большой', 'сырный'))
