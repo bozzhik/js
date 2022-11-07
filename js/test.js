@@ -1,7 +1,7 @@
 let max = {
    age: 13,
-   'bozzhik maxim': true
+   'bozzhik maxim': false
 }
 
 console.log(max)
-console.log(max['bozzhik maxim'])
+console.log(!max['bozzhik maxim'])
