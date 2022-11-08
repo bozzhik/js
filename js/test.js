@@ -7,6 +7,12 @@ let cracker = {
    }
 }
 
-if ('taste' in cracker) {
-   console.log(cracker.taste)
+for (let key in cracker) {
+   console.log(key)
+   console.log(cracker[key])
+}
+
+for (let key in cracker.paper) {
+   console.log(key)
+   console.log(cracker.paper[key])
 }
