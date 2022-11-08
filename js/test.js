@@ -1,10 +1,20 @@
-function makeCrackerInfo(size, taste) {
-   return {
-      size,
-      taste,
-      paper: true
-   }
+let cracker = {
+   taste: 'cheese'
 }
 
-let cracker = makeCrackerInfo('13', 'cheese')
 console.log(cracker)
+
+cracker.size = 13
+
+console.log(cracker)
+
+cracker['visibility'] = true
+
+console.log(cracker)
+
+cracker.paper = {
+   red: true,
+   black: false
+}
+
+console.log(cracker.paper)
