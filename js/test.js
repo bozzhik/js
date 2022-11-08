@@ -1,11 +1,10 @@
-let taste = 'cheese'
-let cracker = {
-   paper: 'red paper',
-   number: 13,
-   item: 'salt',
-   10: 'get',
-   [taste]: true
-}
+let id = Symbol('id')
 
-console.log(cracker['10'])
-console.log(cracker[10])
+let cracker = {
+   number: 13,
+   taste: 'cheese',
+   [id]: 'супер-крекер'
+}
+console.log(typeof id)
+console.log(cracker)
+console.log(cracker[id])
