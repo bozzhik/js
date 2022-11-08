@@ -4,15 +4,14 @@ let cracker = {
    paper: {
       red: true,
       black: false
+   },
+
+   // info: function () {
+   //    console.log(`${cracker.taste}, ${cracker.size} размер. С красным перцем - ${cracker.paper.red}`)
+   // },
+   info() {
+      console.log(`${cracker.taste}, ${cracker.size} размер. С красным перцем - ${cracker.paper.red}`)
    }
 }
 
-for (let key in cracker) {
-   console.log(key)
-   console.log(cracker[key])
-}
-
-for (let key in cracker.paper) {
-   console.log(key)
-   console.log(cracker.paper[key])
-}
+cracker.info()
