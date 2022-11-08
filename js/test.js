@@ -1,10 +1,12 @@
-let id = Symbol('id')
-
 let cracker = {
    number: 13,
    taste: 'cheese',
-   [id]: 'супер-крекер'
+   paper: {
+      red: 'yes',
+      black: 'no'
+   }
 }
-console.log(typeof id)
+
 console.log(cracker)
-console.log(cracker[id])
+console.log(cracker.paper)
+console.log(cracker.paper.red)
