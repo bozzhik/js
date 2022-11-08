@@ -1,14 +1,8 @@
 let cracker = {
-   taste: 'cheese'
-}
-
-cracker.size = 13
-cracker['visibility'] = true
-cracker.paper = {
-   red: true,
-   black: false
+   taste: 'cheese',
+   size: 13
 }
 console.log(cracker)
 
-delete cracker.taste
+cracker.size = 5
 console.log(cracker)
