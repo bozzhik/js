@@ -4,5 +4,11 @@ let cracker = {
 }
 console.log(cracker)
 
-cracker.size = 5
+let item = cracker
+
+console.log(item)
+
+item.size = 5
+
 console.log(cracker)
+console.log(item)
