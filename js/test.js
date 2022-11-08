@@ -1,8 +1,10 @@
 let cracker = {
    taste: 'cheese',
-   size: 13
+   size: 13,
+   paper: {
+      red: true,
+      black: false
+   }
 }
 
-if (cracker.size) {
-   console.log(cracker.size)
-}
+console.log(cracker?.paper?.red)
