@@ -1,9 +1,8 @@
-let max = {
-   age: 13,
-   'bozzhik maxim': false,
-   cracker: true
+let taste = 'cheese'
+let cracker = {
+   number: 13,
+   item: 'salt',
+   [taste + 'Cracker']: false
 }
 
-console.log(max)
-console.log(max['age'])
-console.log(max['cracker'])
+console.log(cracker['cheeseCracker'])
