@@ -4,10 +4,7 @@ let cracker = {
    taste: 'cheese',
    size: 13
 }
-
-let item = Object.assign({}, cracker)
-
-item.size = 5
-
 console.log(cracker)
-console.log(item)
+
+Object.assign(cracker, { ['paper']: true, visibility: '0.25' })
+console.log(cracker)
