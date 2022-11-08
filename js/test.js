@@ -7,4 +7,6 @@ let cracker = {
    }
 }
 
-console.log(cracker?.paper?.red)
+if ('taste' in cracker) {
+   console.log(cracker.taste)
+}
