@@ -1,7 +1,8 @@
 function makeCrackerInfo(size, taste) {
    return {
-      size: size,
-      tatse: taste
+      size,
+      taste,
+      paper: true
    }
 }
 
