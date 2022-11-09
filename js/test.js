@@ -1,7 +1,10 @@
-function CrackerInfo(taste, size) {
-   this.taste = taste
-   this.size = size
+let userInfo = {
+   name: 'Вася',
+   аge: 30
+   showInfo() {
+      console.log(`$`)
+   }
 }
-
-console.log(new CrackerInfo('cheese', 13))
-console.log(new CrackerInfo('salt', 5))
+// let user = userInfo
+// user.age = 45
+console.log(userInfo.age)
