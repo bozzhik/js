@@ -1,15 +1,7 @@
-let cracker = {
-   taste: 'cheese',
-   size: 13,
-   paper: {
-      red: true,
-      black: false
-   },
-
-   showInfo() {
-      let info = () => console.log(`${this.taste}, ${this.size} размер. С красным перцем - ${this.paper.red}`)
-      info()
-   }
+function CrackerInfo(taste, size) {
+   this.taste = taste
+   this.size = size
 }
 
-cracker.showInfo()
+console.log(new CrackerInfo('cheese', 13))
+console.log(new CrackerInfo('salt', 5))
