@@ -1,4 +1,4 @@
-function sum(a, b) {
-   return a + b
-}
-console.log(`сумма: ${sum(4, 7)}`)
+let text = `привет!
+я сырный крекер
+во мне нет соли :)`
+console.log(`про крекер: ${text}`)
