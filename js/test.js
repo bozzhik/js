@@ -1,5 +1,4 @@
-let text = 'сырный крекер'
+let text = 'Cырный крекер'
 
-for (const char of text) {
-   console.log(char)
-}
+console.log(text.toUpperCase())
+console.log(text.toLowerCase())
