@@ -1,8 +1,4 @@
-let value = 5 + 'крекер'
-if (isNaN(value)) {
-   console.log('крекер не добавлен')
-} else {
-   console.log('крекер добавлен')
+function sum(a, b) {
+   return a + b
 }
-
-// console.log(isNaN(25 + 'крекер'))
+console.log(`сумма: ${sum(4, 7)}`)
