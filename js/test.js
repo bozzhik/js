@@ -1,2 +1,1 @@
-let num = -5
-console.log(Math.abs(num))
+console.log(Math.pow(5, 5))
