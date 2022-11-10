@@ -1,5 +1,4 @@
 let text = 'сырный крекер'
+let searchText = 'сыр'
 
-console.log(text.includes('кр'))
-console.log(text.startsWith('сыр'))
-console.log(text.endsWith('р'))
+console.log(text.toLowerCase().includes(searchText.toLowerCase()))
