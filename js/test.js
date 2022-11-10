@@ -1,4 +1,3 @@
-let text = 'Cырный крекер'
+let text = 'сырный крекер'
 
-console.log(text.toUpperCase())
-console.log(text.toLowerCase())
+console.log(text.indexOf('сыр'))
