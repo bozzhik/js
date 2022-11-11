@@ -7,8 +7,8 @@ console.log(array)
 // удалить и вернуть в переменную
 let arrayTwo = ['сырный', 'соленый', 'острый']
 
-let removed = arrayTwo.splice(1, 1)
-console.log(array)
+let removed = arrayTwo.splice(2, 1)
+console.log(arrayTwo)
 console.log(removed)
 
 // заменить элемент
