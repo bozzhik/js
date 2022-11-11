@@ -1,4 +1,6 @@
 let array = ['сырный', 'соленый', 'острый']
-
 console.log(array)
-console.log(array.length)
+
+let arr = array
+arr.length = 2
+console.log(arr)
