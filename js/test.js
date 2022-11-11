@@ -1,6 +1,8 @@
 let array = ['сырный', 'соленый', 'острый']
 console.log(array)
 
-let arr = array
-arr.length = 2
-console.log(arr)
+array[1] = 'сладкий'
+console.log(array)
+
+array[3] = 'пикантный'
+console.log(array)
