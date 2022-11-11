@@ -1,2 +1,4 @@
 // let array = new Array()
-let array = []
+let array = ['сырный', 'крекер']
+
+console.log(array)
