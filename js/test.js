@@ -1,5 +1,5 @@
 let array = ['сырный', 'соленый', 'острый']
 console.log(array)
 
-array.pop()
+array.unshift('пикантный')
 console.log(array)
