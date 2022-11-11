@@ -1,5 +1,5 @@
 let array = ['сырный', 'соленый', 'острый']
 console.log(array)
 
-array.push('пикантный')
+array.shift()
 console.log(array)
