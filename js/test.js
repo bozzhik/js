@@ -1,16 +1,4 @@
-let array = [
-   'сырный',
-   {
-      taste: 'cheese',
-      size: 13
-   },
-   true,
-   function () {
-      console.log('я крекер')
-   }
-]
-console.log(array)
+let array = ['сырный', 'соленый', 'острый']
 
-console.log(array[0])
-console.log(array[1].size)
-array[3]()
+console.log(array)
+console.log(array.length)
