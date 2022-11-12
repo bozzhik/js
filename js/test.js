@@ -1,8 +1,6 @@
 let array = ['сырный', 'соленый', 'острый']
+console.log(array)
+let newArray = array
+newArray.push('пикантный')
 
-let reduceValue = array.reduce(function (previousValue, item, index, array) {
-   //    console.log(previousValue)
-   //    console.log(item)
-   return `${item}, ${previousValue}`
-})
-console.log(`вкусы крекера: ${reduceValue}`)
+console.log(newArray)
