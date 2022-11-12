@@ -29,9 +29,9 @@ body.index .container .block .header .animated {
   text-transform: uppercase;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: animated_text 10s ease-in-out infinite;
-  -moz-animation: animated_text 10s ease-in-out infinite;
-  -webkit-animation: animated_text 10s ease-in-out infinite;
+  animation: animated_text 5s ease-in-out infinite;
+  -moz-animation: animated_text 5s ease-in-out infinite;
+  -webkit-animation: animated_text 5s ease-in-out infinite;
   font-family: Inter;
   color: #dadada;
   padding-bottom: 1.5%;
@@ -105,7 +105,6 @@ body.index .items .block-item {
           justify-content: flex-start;
   height: 450px;
   width: 585px;
-  border-radius: 27px;
   font-size: 1.5rem;
   font-weight: 500;
   color: #dadada;
@@ -113,23 +112,30 @@ body.index .items .block-item {
   cursor: help;
 }
 body.index .items .block-item:hover {
-  color: #868686;
-  background-color: #141414;
+  color: #dadada;
+  background-color: #0a0a0a;
+  outline: 1px solid #cbfb45;
+}
+body.index .items .block-item:hover h1 {
+  color: #cbfb45;
 }
 body.index .items .block-item h2 {
-  margin: 4% 0 5% 6%;
+  margin: 4% 0 5% 5%;
   font-size: 1.4rem;
   line-height: 1.7rem;
-  font-weight: 400;
+  font-weight: 200;
   color: bl;
 }
 body.index .items .block-item h1 {
-  margin: 4% 0 1% 6%;
+  margin: 9% 0 1% 5%;
   font-size: 2.5rem;
   font-weight: 500;
 }
 
 @media only screen and (min-width: 360px) and (max-device-width: 1366px) {
+  body.index {
+    padding-bottom: 100px;
+  }
   body.index .container .block .header h1 {
     font-weight: 600;
     font-size: 3rem;
@@ -173,27 +179,22 @@ body.index .items .block-item h1 {
             justify-content: flex-start;
     height: 225px;
     width: 325px;
-    border-radius: 27px;
     font-size: 1.5rem;
     font-weight: 500;
     color: #dadada;
     background-color: #1e1e1e;
     cursor: help;
   }
-  body.index .items .block-item:hover {
-    color: #868686;
-    background-color: #141414;
-  }
   body.index .items .block-item h2 {
     margin: 4% 0 5% 6%;
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.5rem;
-    font-weight: 400;
+    font-weight: 200;
+    color: bl;
   }
   body.index .items .block-item h1 {
-    margin: 11% 0 1% 6%;
-    font-size: 2.35rem;
-    line-height: 3rem;
+    margin: 16% 0 1% 6%;
+    font-size: 2.5rem;
     font-weight: 500;
   }
 }

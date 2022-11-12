@@ -33,9 +33,9 @@ body.index {
                text-transform: uppercase;
                -webkit-background-clip: text;
                -webkit-text-fill-color: transparent;
-               animation: animated_text 10s ease-in-out infinite;
-               -moz-animation: animated_text 10s ease-in-out infinite;
-               -webkit-animation: animated_text 10s ease-in-out infinite;
+               animation: animated_text 5s ease-in-out infinite;
+               -moz-animation: animated_text 5s ease-in-out infinite;
+               -webkit-animation: animated_text 5s ease-in-out infinite;
                font-family: Inter;
                color: $white;
                padding-bottom: 1.5%;
@@ -96,7 +96,7 @@ body.index {
          justify-content: flex-start;
          height: 450px;
          width: 585px;
-         border-radius: 27px;
+         // border-radius: 27px;
          font-size: 1.5rem;
          font-weight: 500;
          color: $white;
@@ -104,20 +104,24 @@ body.index {
          cursor: help;
 
          &:hover {
-            color: $white-hov;
-            background-color: $black-hov;
+            color: $white;
+            background-color: $black;
+            outline: 1px solid $green;
+         }
+         &:hover h1 {
+            color: $green;
          }
 
          & h2 {
-            margin: 4% 0 5% 6%;
+            margin: 4% 0 5% 5%;
             font-size: 1.4rem;
             line-height: 1.7rem;
-            font-weight: 400;
+            font-weight: 200;
             color: bl;
          }
 
          & h1 {
-            margin: 4% 0 1% 6%;
+            margin: 9% 0 1% 5%;
             font-size: 2.5rem;
             font-weight: 500;
          }
@@ -127,6 +131,8 @@ body.index {
 
 @media only screen and (min-width: 360px) and (max-device-width: 1366px) {
    body.index {
+      padding-bottom: 100px;
+
       .container {
          .block {
             .header {
@@ -170,29 +176,34 @@ body.index {
             justify-content: flex-start;
             height: 225px;
             width: 325px;
-            border-radius: 27px;
+            // border-radius: 27px;
             font-size: 1.5rem;
             font-weight: 500;
             color: $white;
             background-color: $black2;
             cursor: help;
 
-            &:hover {
-               color: $white-hov;
-               background-color: $black-hov;
-            }
+            // &:hover {
+            //    color: $white;
+            //    background-color: $black;
+            //    outline: 1px solid $green;
+            // }
+
+            // &:hover h1 {
+            //    color: $green;
+            // }
 
             & h2 {
                margin: 4% 0 5% 6%;
-               font-size: 1rem;
+               font-size: 1.2rem;
                line-height: 1.5rem;
-               font-weight: 400;
+               font-weight: 200;
+               color: bl;
             }
 
             & h1 {
-               margin: 11% 0 1% 6%;
-               font-size: 2.35rem;
-               line-height: 3rem;
+               margin: 16% 0 1% 6%;
+               font-size: 2.5rem;
                font-weight: 500;
             }
          }
