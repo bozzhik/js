@@ -1,10 +1,5 @@
-let array = [
-   { taste: 'сырный', size: 5 },
-   { taste: 'соленый', size: 7 },
-   { taste: 'острый', size: 'не определенно' }
-]
+let arrayOne = ['сырный', 'соленый', 'острый']
+console.log(arrayOne.sort())
 
-let result = array.filter((item, index, array) => {
-   return item.size >= 5
-})
-console.log(result)
+let arrayTwo = [5, 7, 13]
+console.log(arrayTwo.sort())
