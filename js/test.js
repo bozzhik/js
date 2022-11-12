@@ -1,7 +1,8 @@
 let array = ['сырный', 'соленый', 'острый']
 
-array.forEach(show)
+let result = array.map(function (item, index, array) {
+   return item[0]
+})
 
-function show(item) {
-   console.log(item)
-}
+console.log(array)
+console.log(result)
