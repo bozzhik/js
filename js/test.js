@@ -1,5 +1,9 @@
 let array = ['сырный', 'соленый', 'острый']
 
-for (let arrayItem of array) {
-   console.log(arrayItem)
-}
+// array.forEach(function (item, index, array) {
+//    console.log(`${item} размером ${index} находится в ${array}`)
+// })
+
+array.forEach((item, index, array) => {
+   console.log(`${item} размером ${index} находится в ${array}`)
+})
