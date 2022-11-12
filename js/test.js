@@ -1,8 +1,11 @@
-let array = ['сырный', 'соленый', 'острый']
-let str = array.join(',')
+let obj = {}
+let arr = []
 
-console.log(array) // просто массив
-console.log(str) // теперь строка
+console.log(typeof obj)
+console.log(typeof arr)
 
-let arrayTwo = ['сырный', 'соленый', 'острый']
-console.log(String(arrayTwo))
+if (Array.isArray(arr)) {
+   console.log('это массив крекеров')
+} else {
+   console.log('это не массив крекеров')
+}
