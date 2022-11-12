@@ -4,13 +4,7 @@ let array = [
    { taste: 'острый', size: 'не определенно' }
 ]
 
-// let resultOne = array.find(function (item, index, array) {
-//    return item.size === 7
-// })
-// console.log(resultOne)
-
-let resultOne = array.find((item) => item.size === 7)
-console.log(resultOne)
-
-let resultTwo = array.findIndex((item) => item.size === 'не определенно')
-console.log(resultTwo)
+let result = array.filter((item, index, array) => {
+   return item.size >= 5
+})
+console.log(result)
