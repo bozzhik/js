@@ -1,11 +1,6 @@
-let obj = {}
-let arr = []
+let array = ['сырный', 'соленый', 'острый']
+console.log(array.length)
 
-console.log(typeof obj)
-console.log(typeof arr)
-
-if (Array.isArray(arr)) {
-   console.log('это массив крекеров')
-} else {
-   console.log('это не массив крекеров')
+for (let i = 0; i < array.length; i++) {
+   console.log(array[i])
 }
