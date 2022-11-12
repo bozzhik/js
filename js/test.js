@@ -1,6 +1,8 @@
-let array = [5, 7, 13, 19]
+let array = ['сырный', 'соленый', 'острый']
 
 let reduceValue = array.reduce(function (previousValue, item, index, array) {
-   return item + previousValue
-}, 0)
-console.log(reduceValue)
+   //    console.log(previousValue)
+   //    console.log(item)
+   return `${item}, ${previousValue}`
+})
+console.log(`вкусы крекера: ${reduceValue}`)
