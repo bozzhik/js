@@ -1,8 +1,8 @@
-let str = 'сырный, соленый, острый'
-let array = str.split(',')
+let array = ['сырный', 'соленый', 'острый']
+let str = array.join(',')
 
-console.log(str) // просто строка
-console.log(array) // теперь массив
+console.log(array) // просто массив
+console.log(str) // теперь строка
 
-let arrayTwo = str.split(',', 2)
-console.log(arrayTwo)
+let arrayTwo = ['сырный', 'соленый', 'острый']
+console.log(String(arrayTwo))
