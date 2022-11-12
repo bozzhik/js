@@ -1,8 +1,6 @@
-let array = ['сырный', 'соленый', 'острый']
+let array = [5, 7, 13, 19]
 
-let result = array.map(function (item, index, array) {
-   return item[0]
-})
-
-console.log(array)
-console.log(result)
+let reduceValue = array.reduce(function (previousValue, item, index, array) {
+   return item + previousValue
+}, 0)
+console.log(reduceValue)
