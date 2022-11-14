@@ -1,8 +1,9 @@
 const bodyElement = document.body
 
-const childNodes = document.body.childNodes
-// console.log(childNodes)
+const previousSiblingNode = bodyElement.previousSibling
+const nextSiblingNode = bodyElement.nextSibling
+const parentNode = bodyElement.parentNode
 
-for (let node of childNodes) {
-   console.log(node)
-}
+console.log(previousSiblingNode)
+console.log(nextSiblingNode)
+console.log(parentNode)
