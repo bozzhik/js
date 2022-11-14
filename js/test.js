@@ -1,2 +1,1 @@
-history.back()
-history.forward()
+alert('крекер')
