@@ -1,7 +1,6 @@
-const htmlElement = document.documentElement
-const headElement = document.head
 const bodyElement = document.body
+const firstChildNode = document.body.firstChild
+const lastChildNode = document.body.lastChild
 
-console.log(htmlElement)
-console.log(headElement)
-console.log(bodyElement)
+console.log(firstChildNode)
+console.log(lastChildNode)
