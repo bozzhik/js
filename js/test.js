@@ -1,10 +1,15 @@
 const bodyElement = document.body
 
-const childNodes = bodyElement.childNodes
-console.log(childNodes)
+const firstChild = bodyElement.firstElementChild
+const lastChild = bodyElement.lastElementChild
 
-const bodyChildren = bodyElement.children
-console.log(bodyChildren)
+console.log(firstChild)
+console.log(lastChild)
 
-const childCount = bodyElement.childElementCount
-console.log(childCount)
+const previousSibling = bodyElement.previousElementSibling
+const nextSibling = bodyElement.nextElementSibling
+const parentElement = bodyElement.parentElement
+
+console.log(previousSibling)
+console.log(nextSibling)
+console.log(parentElement)
