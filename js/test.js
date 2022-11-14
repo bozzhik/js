@@ -1,6 +1,8 @@
-let array = ['сырный', 'соленый', 'острый']
-console.log(array)
-let newArray = array
-newArray.push('пикантный')
+console.log(navigator.userAgent)
+if (navigator.userAgent.includes('Chrome')) {
+   console.log('Chrome')
+} else if (navigator.userAgent.includes('Firefox')) {
+   console.log('Firefox')
+}
 
-console.log(newArray)
+console.log(navigator.platform)
