@@ -1,2 +1,2 @@
-const confirmResult = confirm('хочешь крекер?')
-console.log(confirmResult)
+const promptResult = prompt('хочешь крекер?')
+console.log(promptResult)
