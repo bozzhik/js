@@ -1,8 +1,5 @@
-console.log(navigator.userAgent)
-if (navigator.userAgent.includes('Chrome')) {
-   console.log('Chrome')
-} else if (navigator.userAgent.includes('Firefox')) {
-   console.log('Firefox')
-}
+console.log(location.href)
 
-console.log(navigator.platform)
+// перенаправление
+
+// location.href = 'https://bozzhik.github.io/z/'
