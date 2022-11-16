@@ -1,15 +1,35 @@
-const bodyElement = document.body
+// класс
+const elemOne = document.querySelectorAll('.itemClass')
+console.log(elemOne)
 
-const firstChild = bodyElement.firstElementChild
-const lastChild = bodyElement.lastElementChild
+// ид
+const elemOne2 = document.querySelectorAll('#itemId')
+console.log(elemOne2)
 
-console.log(firstChild)
-console.log(lastChild)
+// тэги
+const elemTwo = document.querySelectorAll('h3')
+console.log(elemTwo)
 
-const previousSibling = bodyElement.previousElementSibling
-const nextSibling = bodyElement.nextElementSibling
-const parentElement = bodyElement.parentElement
+// тэг с классом
+const elemThree = document.querySelectorAll('div.container')
+console.log(elemThree)
 
-console.log(previousSibling)
-console.log(nextSibling)
-console.log(parentElement)
+// по первому уровню вложенности
+const elemFour = document.querySelectorAll('.itemClass > span')
+console.log(elemFour)
+
+// по нескольким селекторам
+const elemFive = document.querySelectorAll('.itemClass, #itemId')
+console.log(elemFive)
+
+// по вложенным селекторам
+const elemSix = document.querySelectorAll('.itemClass .text')
+console.log(elemSix)
+
+// по атрибуту
+const elemSeven = document.querySelectorAll('[data-item]')
+console.log(elemSeven)
+
+// по атрибуту со значением
+const elemEight = document.querySelectorAll('[data-item ="13"]')
+console.log(elemEight)
