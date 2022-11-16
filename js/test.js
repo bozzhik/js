@@ -1,11 +1,5 @@
 // конкретный элемент
-const elem = document.querySelectorAll('.itemClass h3')
-console.log(elem[2])
+const elem = document.querySelectorAll('.itemClass')
+const elemChild = elem[0].querySelectorAll('h4')
 
-// for (const item of elem) {
-//    console.log(item)
-// }
-
-elem.forEach((item) => {
-   console.log(item)
-})
+console.log(elemChild)
