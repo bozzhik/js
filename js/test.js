@@ -1,3 +1,6 @@
-const elem = document.querySelector('.item-class')
+const element = document.querySelector('span')
 
-elem.remove()
+const elemClass = element.className
+console.log(elemClass)
+
+element.className = 'smpl'
