@@ -1,8 +1,4 @@
-const listStatic = document.querySelectorAll('.text')
-console.log(listStatic)
+const elem = document.querySelector('.text')
+const parentList = elem.closest('.item-class')
 
-const listLive = document.getElementsByClassName('text')
-console.log(listLive)
-
-const itemList = document.querySelector('.item-class')
-itemList.insertAdjacentHTML('beforeend', '<h4 class="text">я пряник</h4>')
+console.log(parentList)
