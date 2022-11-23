@@ -2,8 +2,8 @@ const element = document.querySelector('span')
 
 element.classList.add('smpl')
 
-element.classList.remove('smpl')
-
-element.classList.toggle('smpl') //добавить если есть, а если нет - удалить
-
-element.classList.contains('smpl') // проверка наличия класса (возвращает true/false)
+if (element.classList.contains('smpl')) {
+   console.log('у меня есть smpl класс')
+} else {
+   console.log(false)
+}
