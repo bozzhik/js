@@ -1,2 +1,2 @@
-const elem = document.getElementsByClassName('item-class')
+const elem = document.getElementsByName('max')
 console.log(elem)
