@@ -1,16 +1,4 @@
-const elem = document.querySelector('.create')
+const block = document.querySelector('.create')
+const title = document.querySelector('p')
 
-elem.insertAdjacentHTML('beforeend', ` <h1>я крекер</h1>`)
-
-/**
- * * beforebegin - перед элементом
- * * afterbegin - в начало элемента
- * ! элемент
- * * beforeend - в конец элемента
- * * afterend - после элемента
- */
-
-/**
- * ! используется чаще inserAdjacentHTML
- * * остальное через: apppent prepend before after
- */
+block.append(title)
