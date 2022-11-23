@@ -1,7 +1,7 @@
 const elem = document.querySelectorAll('.text')[0]
 
-const elemContent = elem.outerHTML
+const elemContent = elem.textContent
 console.log(elemContent)
 
-elem.outerHTML = `я тоже <b>бублик<b>`
-console.log(elem) // код не обновляется, получаем старую запись
+elem.textContent = `я тоже <b>бублик</b>`
+console.log(elem)
