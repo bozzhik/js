@@ -10,4 +10,8 @@ body.test {
    font-family: 'Inter';
    font-weight: 300;
    background-color: $black;
+   color: $white;
+   display: grid;
+   place-items: center;
+   font-size: 3rem;
 }

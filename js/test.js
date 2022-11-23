@@ -1,4 +1,6 @@
-const elem = document.querySelector('.item-class')
-const elem2 = elem.nextElementSibling
+const elem = document.querySelectorAll('.text')[0]
 
-console.log(elem2)
+const elemContent = elem.innerHTML
+console.log(elemContent)
+
+elemContent.innerHTML = 'я бублик'
