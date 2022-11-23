@@ -1,7 +1,4 @@
-const elem = document.querySelector('.atribute-value')
-const getComment = elem.nextSibling
+const newElement = document.createElement('div')
 
-console.log(getComment)
-console.log(getComment.data)
-
-getComment.data = 'бублик'
+newElement.innerHTML = `я коклетка`
+console.log(newElement)
