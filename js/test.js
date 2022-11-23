@@ -1,6 +1,3 @@
-const input = document.querySelector('input')
+const input = document.querySelector('[placeholder]')
 
-console.log(input.dataset.size)
-
-input.dataset.size = 13 // меняю значение атрибута из html
-console.log(input.dataset.size)
+console.log(input.tagName)
