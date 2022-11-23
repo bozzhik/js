@@ -1,9 +1,6 @@
 const link = document.querySelector('#me')
-const input = document.querySelector('input')
 
-console.log(link.href)
-console.log(link.target)
-
-console.log(input.placeholder)
-
-console.dir(link)
+link.hasAttribute('name') // проверить наличие атрибута
+link.getAttribute('name') // получить артибут
+link.setAttribute('name', 'telegram') // установить атрибут
+link.removeAttribute('name') // удалить атрибут
