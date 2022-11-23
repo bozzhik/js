@@ -1,2 +1,2 @@
-const elem = document.getElementById('item-id')
+const elem = document.getElementsByTagName('span')
 console.log(elem)
