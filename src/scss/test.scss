@@ -8,16 +8,21 @@ $green: #cbfb45;
 
 body.test {
    font-family: 'Inter';
-   font-weight: 300;
+   font-weight: 600;
    background-color: $black;
    color: $white;
    display: grid;
    place-items: center;
    font-size: 3rem;
+   text-decoration: none;
+
+   a {
+      color: yellow;
+   }
 
    // & b {
-   //    font-weight: 900;
-   //    color: $green;
+   //    font-weight: 600;
+   //    color: yellow;
    // }
 
    .cracker {

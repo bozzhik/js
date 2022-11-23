@@ -1,5 +1,9 @@
-const element = document.querySelector('.cracker')
+const link = document.querySelector('#me')
+const input = document.querySelector('input')
 
-const elementStyle = getComputedStyle(element) // берем из css
-const paddingTop = parseInt(elementStyle.paddingTop) // переводит 13% в число
-console.log(paddingTop)
+console.log(link.href)
+console.log(link.target)
+
+console.log(input.placeholder)
+
+console.dir(link)
