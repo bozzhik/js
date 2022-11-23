@@ -19,7 +19,14 @@ body.test {
    //    font-weight: 900;
    //    color: $green;
    // }
+
    .cracker {
       color: $grey2;
+
+      & ::before {
+         content: '♥ ';
+         font-weight: 700;
+         color: yellow;
+      }
    }
 }
