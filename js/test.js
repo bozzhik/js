@@ -1,7 +1,10 @@
 const input = document.querySelector('input')
 
-input.setAttribute('id', '13')
-console.log(input.id)
+input.setAttribute('value', 'введи шо хочешь')
+console.log(input.value)
 
-input.id = '5'
-console.log(input.getAttribute('id'))
+input.value = 'ну давай вводи шо-то'
+console.log(input.getAttribute('value'))
+
+// не происходит обновления атрибута в console.log
+// а placeholder изменился
