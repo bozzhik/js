@@ -1,5 +1,2 @@
-const elem = document.querySelectorAll('.text')[1]
-
-const elem2 = document.querySelector('.text')
+const elem = document.getElementById('item-id')
 console.log(elem)
-console.log(elem2)
