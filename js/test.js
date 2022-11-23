@@ -1,7 +1,7 @@
-const elem = document.querySelectorAll('.text')[0]
+const elem = document.querySelector('.atribute-value')
+const getComment = elem.nextSibling
 
-const elemContent = elem.textContent
-console.log(elemContent)
+console.log(getComment)
+console.log(getComment.data)
 
-elem.textContent = `я тоже <b>бублик</b>`
-console.log(elem)
+getComment.data = 'бублик'
