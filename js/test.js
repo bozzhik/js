@@ -1,5 +1,5 @@
-// конкретный элемент
-const elem = document.querySelectorAll('.itemClass')
-const elemChild = elem[0].querySelectorAll('h4')
+const elem = document.querySelectorAll('.text')[1]
 
-console.log(elemChild)
+const elem2 = document.querySelector('.text')
+console.log(elem)
+console.log(elem2)
