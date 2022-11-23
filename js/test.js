@@ -1,5 +1,6 @@
 const element = document.querySelector('span')
 
-element.style.cssText = `
-color: yellow;
-text-decoration-line: underline;`
+console.log(element.style.color) // в html style его нет
+
+const elementStyle = getComputedStyle(element) // берем из css
+console.log(elementStyle.color)
