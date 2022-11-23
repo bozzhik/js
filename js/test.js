@@ -1,4 +1,5 @@
-const block = document.querySelector('.create')
-const title = document.querySelector('p')
+const elem = document.querySelector('.item-class')
+const cloneElem = elem.cloneNode(true) // если null то без содержимого
 
-block.append(title)
+const block = document.querySelector('.create')
+block.append(cloneElem)
