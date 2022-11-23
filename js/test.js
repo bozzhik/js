@@ -1,4 +1,2 @@
-const newElement = document.createElement('div')
-
-newElement.innerHTML = `я коклетка`
-console.log(newElement)
+const newText = document.createTextNode('вафелька')
+console.log(newText)
