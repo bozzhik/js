@@ -1,7 +1,4 @@
 const element = document.querySelector('span')
 
-element.classList.add('smpl')
-
-for (let className of element.classList) {
-   console.log(className)
-}
+element.style.color = 'yellow'
+element.style.textDecorationLine = 'underline'
