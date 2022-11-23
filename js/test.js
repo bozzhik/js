@@ -1,9 +1,7 @@
-const link = document.querySelector('#me')
+const input = document.querySelector('input')
 
-link.setAttribute('data-link', 'telegram')
+input.setAttribute('id', '13')
+console.log(input.id)
 
-if (link.hasAttribute('data-link')) {
-   console.log('data-link имеется')
-} else {
-   console.log(false)
-}
+input.id = '5'
+console.log(input.getAttribute('id'))
